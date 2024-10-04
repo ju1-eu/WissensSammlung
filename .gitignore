@@ -25,10 +25,7 @@ venv/
 .virtual_documents/
 
 # LaTeX
-*.aux
-*.log
-*.out
-*.toc
+*.aux *.log *.out *.toc *.bbl *.blg *.fdb_latexmk *.synctex.gz *.fls *.bcf *.run.xml
 
 # HTML
 *.html
