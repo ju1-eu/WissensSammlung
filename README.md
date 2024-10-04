@@ -24,6 +24,18 @@ Die WissensSammlung ist ein Open-Source-Projekt, das als zentraler Hub für vers
     - [LaTeX-Kompilierung](#latex-kompilierung)
   - [Projektstruktur](#projektstruktur)
   - [Mitwirken](#mitwirken)
+    - [**Unterschied zwischen `git fork` und `git clone`**](#unterschied-zwischen-git-fork-und-git-clone)
+    - [**Wann verwenden Sie `git fork` und wann `git clone`?**](#wann-verwenden-sie-git-fork-und-wann-git-clone)
+  - [Mitwirken](#mitwirken-1)
+    - [**1. Repository forken**](#1-repository-forken)
+    - [**2. Repository klonen**](#2-repository-klonen)
+    - [**3. Neuen Branch erstellen**](#3-neuen-branch-erstellen)
+    - [**4. Änderungen vornehmen**](#4-änderungen-vornehmen)
+    - [**5. Änderungen committen**](#5-änderungen-committen)
+    - [**6. Änderungen pushen**](#6-änderungen-pushen)
+    - [**7. Pull Request erstellen**](#7-pull-request-erstellen)
+    - [**Beispiel für Benutzer mit Schreibrechten zum Original-Repository:**](#beispiel-für-benutzer-mit-schreibrechten-zum-original-repository)
+    - [**Zusätzliche Tipps:**](#zusätzliche-tipps)
   - [Lizenz](#lizenz)
   - [Kontakt](#kontakt)
 
@@ -95,14 +107,9 @@ Der Ordner `scripts` enthält nützliche Shell-Skripte zur Automatisierung von A
 
 ### Installation
 
-1. **Repository klonen**
+1. **Repository erstellen**
 
    ```bash
-   # Repository klonen
-   git clone 
-   git@github.com:ju1-eu/WissensSammlung.git
-   cd WissensSammlung
-
    # Repository neu
    echo "# WissensSammlung" >> README.md
    git init
@@ -263,37 +270,169 @@ WissensSammlung/
 
 ## Mitwirken
 
+**Unterschied zwischen `git fork` und `git clone` sowie angepasste Anleitung zur Mitwirkung**
+
+---
+
+### **Unterschied zwischen `git fork` und `git clone`**
+
+**`git fork`** und **`git clone`** sind zwei grundlegende, aber unterschiedliche Aktionen im Git-Ökosystem, insbesondere auf Plattformen wie GitHub. Hier eine detaillierte Erklärung:
+
+1. **`git fork`:**
+
+   - **Definition:** Ein Fork ist eine persönliche Kopie eines Repositorys, die unter Ihrem eigenen GitHub-Konto erstellt wird.
+   - **Zweck:** Wird verwendet, wenn Sie zu einem Projekt beitragen möchten, für das Sie keine direkten Schreibrechte haben.
+   - **Vorteil:** Sie können Änderungen in Ihrem eigenen Repository vornehmen, ohne das Original zu beeinflussen. Anschließend können Sie Pull Requests erstellen, um Ihre Änderungen im Originalprojekt vorzuschlagen.
+   - **Voraussetzung:** Keine direkten Schreibrechte zum Original-Repository erforderlich.
+
+2. **`git clone`:**
+
+   - **Definition:** Der Befehl `git clone` erstellt eine lokale Kopie eines Repositorys auf Ihrem Computer.
+   - **Zweck:** Dient dazu, ein Repository (ob Ihr eigenes oder ein geforktes Repository) lokal zu bearbeiten.
+   - **Vorteil:** Ermöglicht es Ihnen, offline zu arbeiten und Änderungen in einer lokalen Umgebung vorzunehmen.
+   - **Voraussetzung:** Sie benötigen die URL des Repositorys, das Sie klonen möchten, sei es das Original oder Ihr eigenes Fork.
+
+**Zusammenfassung:**
+
+- **Fork:** Erstellt eine persönliche Kopie des Repositorys auf GitHub.
+- **Clone:** Erstellt eine lokale Kopie eines Repositorys auf Ihrem Computer.
+
+---
+
+### **Wann verwenden Sie `git fork` und wann `git clone`?**
+
+- **Verwenden Sie `git fork`, wenn:**
+  - Sie zu einem Repository beitragen möchten, für das Sie keine Schreibrechte haben.
+  - Sie eine persönliche Kopie des Projekts auf GitHub benötigen, um experimentelle Änderungen vorzunehmen.
+
+- **Verwenden Sie `git clone`, wenn:**
+  - Sie ein Repository (entweder das Original oder ein geforktes Repository) auf Ihren lokalen Computer kopieren möchten.
+  - Sie Änderungen lokal vornehmen und diese dann wieder mit dem entfernten Repository synchronisieren möchten.
+
+**Typischer Workflow für Beiträge zu einem Repository, für das Sie keine Schreibrechte haben:**
+
+1. **Forken des Repositorys:** Erstellen Sie eine persönliche Kopie des Repositorys auf Ihrem GitHub-Konto.
+2. **Klonen Ihres geforkten Repositorys:** Kopieren Sie Ihr geforktes Repository auf Ihren lokalen Computer.
+3. **Erstellen eines neuen Branches:** Arbeiten Sie in einem separaten Branch für Ihre Änderungen.
+4. **Änderungen vornehmen und committen:** Nehmen Sie Ihre Änderungen vor und committen Sie diese mit aussagekräftigen Nachrichten.
+5. **Pushen des Branches zu GitHub:** Laden Sie Ihren Branch zu Ihrem geforkten Repository hoch.
+6. **Erstellen eines Pull Requests:** Fordern Sie die Übernahme Ihrer Änderungen in das Original-Repository an.
+
+---
+
+## Mitwirken
+
 Beiträge zu diesem Projekt sind herzlich willkommen! Wenn Sie Ideen, Verbesserungen oder Fehlerkorrekturen haben, folgen Sie bitte diesen Schritten:
 
-1. **Repository forken**
+### **1. Repository forken**
 
-   Klicken Sie auf GitHub auf "Fork", um eine Kopie des Repositories in Ihrem Account zu erstellen.
+Falls Sie keine direkten Schreibrechte zum Repository haben, müssen Sie es zunächst forken, um eine persönliche Kopie zu erstellen.
 
-2. **Neuen Branch erstellen**
+1. Navigieren Sie zu [WissensSammlung auf GitHub](https://github.com/ju1-eu/WissensSammlung).
+2. Klicken Sie auf den Button "Fork" oben rechts, um eine Kopie des Repositorys in Ihrem eigenen GitHub-Account zu erstellen.
+
+### **2. Repository klonen**
+
+Klonen Sie nun das geforkte Repository auf Ihren lokalen Computer.
+
+```bash
+git clone git@github.com:ju1-eu/WissensSammlung.git
+cd WissensSammlung
+```
+
+### **3. Neuen Branch erstellen**
+
+Erstellen Sie einen neuen Branch für Ihre Änderungen, um die Übersichtlichkeit zu bewahren und Konflikte zu vermeiden.
+
+```bash
+git checkout -b feature/neues-feature
+```
+
+*Ersetzen Sie `neues-feature` durch einen aussagekräftigen Namen für Ihren Branch.*
+
+### **4. Änderungen vornehmen**
+
+Nehmen Sie die gewünschten Änderungen am Projekt vor.
+
+### **5. Änderungen committen**
+
+Committen Sie Ihre Änderungen mit einer aussagekräftigen Commit-Nachricht nach dem [Conventional Commits Standard](https://www.conventionalcommits.org/de/v1.0.0/).
+
+Beispiel:
+
+```bash
+git add .
+git commit -m "feat(docs): add detailed installation instructions"
+```
+
+### **6. Änderungen pushen**
+
+Pushen Sie Ihren Branch zu Ihrem geforkten Repository auf GitHub.
+
+```bash
+git push origin feature/neues-feature
+```
+
+### **7. Pull Request erstellen**
+
+1. Gehen Sie zu Ihrem geforkten Repository auf GitHub.
+2. Sie sollten eine Meldung sehen, dass ein neuer Branch gepusht wurde. Klicken Sie auf "Compare & pull request".
+3. Fügen Sie eine Beschreibung hinzu, die Ihre Änderungen erklärt, und klicken Sie auf "Create pull request".
+
+---
+
+**Anmerkung:** Wenn Sie bereits Schreibrechte zum Original-Repository haben, können Sie Schritt 1 (Fork) überspringen und direkt das Original-Repository klonen.
+
+### **Beispiel für Benutzer mit Schreibrechten zum Original-Repository:**
+
+1. **Repository klonen:**
+
+   ```bash
+   git clone https://github.com/ju1-eu/WissensSammlung.git
+   cd WissensSammlung
+   ```
+
+2. **Neuen Branch erstellen:**
 
    ```bash
    git checkout -b feature/neues-feature
    ```
 
-3. **Änderungen vornehmen**
-
-   Nehmen Sie Ihre Änderungen vor und committen Sie diese mit aussagekräftigen Commit-Nachrichten.
+3. **Änderungen vornehmen, committen und pushen:**
 
    ```bash
    git add .
-   git commit -m "Beschreibung der Änderungen"
-   ```
-
-4. **Änderungen pushen**
-
-   ```bash
+   git commit -m "feat(docs): add detailed installation instructions"
    git push origin feature/neues-feature
    ```
 
-5. **Pull Request erstellen**
-   - Gehe zu deinem Repository auf GitHub.
-   - Du siehst eine Meldung, dass ein neuer Branch gepusht wurde. Klicke auf "Compare & pull request".
-   - Füge eine Beschreibung hinzu und klicke auf "Create pull request".
+4. **Pull Request erstellen:** Folgen Sie den gleichen Schritten wie oben.
+
+### **Zusätzliche Tipps:**
+
+- **Upstream-Repository konfigurieren:**
+
+  Wenn Sie das Repository geforkt haben, ist es hilfreich, das Original-Repository als `upstream` hinzuzufügen, um Ihre lokale Kopie auf dem neuesten Stand zu halten.
+
+  ```bash
+  git remote add upstream https://github.com/ju1-eu/WissensSammlung.git
+  ```
+
+- **Aktualisieren Ihrer lokalen Kopie:**
+
+  Halten Sie Ihre lokale Kopie mit dem Original-Repository synchronisiert.
+
+  ```bash
+  git fetch upstream
+  git checkout main
+  git merge upstream/main
+  ```
+
+**Zusammenfassung:**
+
+- **`git fork`** erstellt eine persönliche Kopie des Repositorys auf GitHub und ist besonders nützlich, wenn Sie keine direkten Schreibrechte haben.
+- **`git clone`** kopiert ein Repository (Original oder Fork) lokal auf Ihren Computer.
+- **Workflow:** Fork → Clone → Branch → Commit → Push → Pull Request.
 
 ---
 
