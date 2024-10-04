@@ -4,7 +4,6 @@ title: Startseite
 
 # Start
 
-- [README](README.html)
 - [To-Do-Liste](To-Do-Liste.html)
 
 ## KI
