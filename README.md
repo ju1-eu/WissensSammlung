@@ -114,7 +114,8 @@ Der Ordner `scripts` enthält nützliche Shell-Skripte zur Automatisierung von A
    echo "# WissensSammlung" >> README.md
    git init
    git add .
-   # Git-Versionskontrolle: Conventional Commit erstellen (präzisere Nachricht)
+   # Git-Versionskontrolle: Conventional Commit erstellen (präzise Nachricht)
+   # git commit -m "chore(docs): update README.md"
    git commit -m "chore(docs): add initial README, LICENSE, and project structure"
    git branch -M main
    git remote add origin git@github.com:ju1-eu/WissensSammlung.git
