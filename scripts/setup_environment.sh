@@ -4,11 +4,11 @@
 # --------------------------------------------------
 
 # Erstellen eines virtuellen Environments
-python3 -m venv venv
-echo "Virtuelle Umgebung 'venv' erstellt."
+python3 -m venv meinenv
+echo "Virtuelle Umgebung 'meinenv' erstellt."
 
 # Aktivieren der virtuellen Umgebung
-source venv/bin/activate
+source meinenv/bin/activate
 echo "Virtuelle Umgebung aktiviert."
 
 # Installieren der Abhängigkeiten
