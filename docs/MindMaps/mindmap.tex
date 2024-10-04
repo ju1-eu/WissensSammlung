@@ -1,0 +1,45 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usepackage[T1]{fontenc} % Verwendung von Vektorschriften
+\usepackage[ngerman]{babel} % Deutsche Rechtschreibung und Silbentrennung
+\usepackage{tikz}
+\usetikzlibrary{mindmap, shapes.geometric} % Import Bibliothek
+
+% Farbdefinitionen (nur die verwendeten Farben)
+\definecolor{MindMapBlue}{RGB}{0, 105, 180}
+\definecolor{MindMapGreen}{RGB}{76, 153, 0}
+\definecolor{MindMapRed}{RGB}{237, 28, 36}
+\definecolor{MindMapOrange}{RGB}{255, 127, 39}
+\definecolor{MindMapBlack}{RGB}{0, 0, 0}
+
+\begin{document}
+\begin{tikzpicture}[mindmap, grow cyclic,
+                    every node/.style={concept, fill=white, text width=2.5cm, align=center, line width=0.5pt},
+                    level 1/.append style={sibling angle=360/4, font=\large\bfseries},
+                    level 2/.append style={level distance=4cm, sibling angle=45, font=\normalsize},
+                    edge from parent/.style={concept color=MindMapBlack, line width=0.5pt},
+                    text only/.style={draw=none, rectangle, text=MindMapBlack}]
+
+% Hauptknoten
+\node[text width=4cm, font=\Large\bfseries]{Mindmap}
+    child [concept color=MindMapGreen] { node {Mindmap}
+        child { node [text only] {Zentraler Knoten}}
+        child { node [text only] {Verzweigungen}}
+        child { node [text only] {Hierarchische Struktur}}
+    }
+    child [concept color=MindMapRed] { node {Gestaltung}
+        child { node [text only]  {Visuell}}
+        child { node [text only]  {Gestaltungsfreiheit}}
+    }
+    child [concept color=MindMapBlue] { node {Anwendung}
+        child { node [text only]  {Brainstorming}}
+        child { node [text only]  {Planung}}
+        child { node [text only]  {Problemlösung}}
+        child { node [text only]  {Notizen}}
+        child { node [text only]  {Lernen} }
+    }
+    child [concept color=MindMapOrange] { node {Vorteile}
+        child { node [text only] {kreatives Denken}}
+        child { node [text only] {Ideenfindung}}
+    };
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env
+*.egg
+*.egg-info/
+dist/
+build/
+meinenv/
+
+# Virtuelle Umgebungen
+meinenv/
+venv/
+.env/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+.virtual_documents/
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+
+# HTML
+*.html
+# Ausnahme: Verfolge die Datei template.html
+!template.html
+
+# Editor spezifisch
+.vscode/
+.idea/
