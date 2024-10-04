@@ -1,0 +1,27 @@
+name: meinenv
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  - numpy
+  - pandas
+  - seaborn
+  - matplotlib
+  - scikit-learn
+  - ipywidgets
+  - scipy
+  - sqlalchemy
+  - pytest
+  - nodejs
+  - python-lsp-server
+  - tk
+  - pip
+  - pip:
+      - requests
+      - django
+      - pygame

@@ -1,0 +1,21 @@
+# Allgemeine Abhängigkeiten für das gesamte Projekt
+numpy
+pandas
+seaborn
+matplotlib
+scikit-learn
+ipywidgets
+scipy
+sqlalchemy
+pytest
+requests
+django
+pygame
+torch
+torchvision
+torchaudio
+ipykernel
+jupyter
+jupyterlab
+python-lsp-server
+
