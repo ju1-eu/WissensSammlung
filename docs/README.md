@@ -31,6 +31,7 @@ Die WissensSammlung ist ein Open-Source-Projekt, das als zentraler Hub für vers
     - [**5. Änderungen committen**](#5-änderungen-committen)
     - [**6. Änderungen pushen**](#6-änderungen-pushen)
     - [**7. Pull Request erstellen**](#7-pull-request-erstellen)
+    - [**Beispiel für Benutzer mit Schreibrechten zum Original-Repository:**](#beispiel-für-benutzer-mit-schreibrechten-zum-original-repository)
     - [**Zusätzliche Tipps:**](#zusätzliche-tipps)
   - [Lizenz](#lizenz)
   - [Kontakt](#kontakt)
@@ -324,7 +325,34 @@ git push origin feature/neues-feature
 2. Sie sollten eine Meldung sehen, dass ein neuer Branch gepusht wurde. Klicken Sie auf "Compare & pull request".
 3. Fügen Sie eine Beschreibung hinzu, die Ihre Änderungen erklärt, und klicken Sie auf "Create pull request".
 
+---
+
 **Anmerkung:** Wenn Sie bereits Schreibrechte zum Original-Repository haben, können Sie Schritt 1 (Fork) überspringen und direkt das Original-Repository klonen.
+
+### **Beispiel für Benutzer mit Schreibrechten zum Original-Repository:**
+
+1. **Repository klonen:**
+
+   ```bash
+   git clone https://github.com/ju1-eu/WissensSammlung.git
+   cd WissensSammlung
+   ```
+
+2. **Neuen Branch erstellen:**
+
+   ```bash
+   git checkout -b feature/neues-feature
+   ```
+
+3. **Änderungen vornehmen, committen und pushen:**
+
+   ```bash
+   git add .
+   git commit -m "feat(docs): add detailed installation instructions"
+   git push origin feature/neues-feature
+   ```
+
+4. **Pull Request erstellen:** Folgen Sie den gleichen Schritten wie oben.
 
 ### **Zusätzliche Tipps:**
 
