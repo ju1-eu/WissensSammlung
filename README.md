@@ -108,8 +108,8 @@ Der Ordner `scripts` enthält nützliche Shell-Skripte zur Automatisierung von A
    ```bash
    # Repository neu
    echo "# WissensSammlung" >> README.md
-   # Symlinks
-   ln -s README.md docs/README_alias.md
+   # Symlink zeigt auf die README.md im Hauptverzeichnis
+   ln -s ../README.md docs/README_alias.md
    ls -l docs/README_alias.md
    git init
    git add .
