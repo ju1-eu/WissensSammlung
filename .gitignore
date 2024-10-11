@@ -7,17 +7,17 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.pyc
 *.env
 .env
 *.egg
 *.egg-info/
 dist/
 build/
-meinenv/
 
 # Virtuelle Umgebungen
 meinenv/
-venv/
+.venv/
 .env/
 
 # Jupyter Notebook Checkpoints
@@ -33,5 +33,5 @@ venv/
 !template.html
 
 # Editor spezifisch
-.vscode/
+#.vscode/
 .idea/
