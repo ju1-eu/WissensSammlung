@@ -6,7 +6,7 @@ date: "2024-09-28"
 
 # Git
 
-bearbeitet am 28. September 2024
+bearbeitet am 11. Oktober 2024
 
 - [Git](#git)
   - [Git-Konfigurationsbefehle verstehen](#git-konfigurationsbefehle-verstehen)
@@ -26,6 +26,8 @@ bearbeitet am 28. September 2024
     - [Git-Aliase nutzen](#git-aliase-nutzen)
     - [Branching und Pull Requests](#branching-und-pull-requests)
     - [Globale .gitignore erweitern](#globale-gitignore-erweitern)
+  - [Bereinigung des Git-Repositories, GitHub-Synchronisation und Setzen der Berechtigungen](#bereinigung-des-git-repositories-github-synchronisation-und-setzen-der-berechtigungen)
+  - [Repository zu klonen und Änderungen vorzunehmen - zwischen zwei Rechnern (iMac und MacBook)](#repository-zu-klonen-und-änderungen-vorzunehmen---zwischen-zwei-rechnern-imac-und-macbook)
 
 ## Git-Konfigurationsbefehle verstehen
 
@@ -387,3 +389,128 @@ venv/
 .vscode/
 .idea/
 ```
+
+## Bereinigung des Git-Repositories, GitHub-Synchronisation und Setzen der Berechtigungen
+
+1. Lokales Repository bereinigen:
+   * Nicht-versionierte Dateien entfernen:
+     ```
+     git clean -fd
+     ```
+   * .DS_Store Dateien entfernen:
+     ```
+     find . -name ".DS_Store" -delete
+     ```
+   * Temporäre Python-Dateien löschen:
+     ```
+     find . -name "*.pyc" -delete
+     find . -name "__pycache__" -type d -exec rm -r {} +
+     ```
+
+2. Berechtigungen unter macOS setzen:
+   * Ausführbare Dateien:
+     ```
+     find . -name "*.py" -exec chmod 644 {} +
+     chmod +x main.py run_tests.py
+     ```
+   * Verzeichnisse:
+     ```
+     find . -type d -exec chmod 755 {} +
+     ```
+
+3. .gitignore aktualisieren:
+   * Öffnen und bearbeiten:
+     ```
+     nano .gitignore
+     ```
+   * Wichtige Einträge:
+     ```
+     .venv/
+     __pycache__/
+     *.pyc
+     *.html
+     !template.html
+     .DS_Store
+     ```
+
+4. Git-Verlauf bereinigen:
+   * Unerwünschte Dateien aus dem Verlauf entfernen:
+     ```
+     git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch **/*.pyc **/__pycache__/* **/.DS_Store' --prune-empty --tag-name-filter cat -- --all
+     ```
+
+5. Änderungen auf GitHub übertragen:
+   * Force-Push der bereinigten Historie:
+     ```
+     git push origin --force --all
+     ```
+
+6. Lokales Repository aufräumen:
+   ```
+   git for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin
+   git reflog expire --expire=now --all
+   git gc --prune=now
+   ```
+
+7. Überprüfen auf verbleibende .html-Dateien:
+   ```
+   git ls-files | grep '\.html$'
+   ```
+
+* Wenn dieser Befehl keine Ausgabe liefert, sind keine .html-Dateien mehr im Repository.
+
+Diese Schritte stellen sicher, dass das Repository von unerwünschten Dateien bereinigt, die Berechtigungen korrekt gesetzt und alle Änderungen mit GitHub synchronisiert sind.
+
+## Repository zu klonen und Änderungen vorzunehmen - zwischen zwei Rechnern (iMac und MacBook)
+
+1. Klonen des Repositories auf dem MacBook:
+   ```
+   git clone https://github.com/ju1-eu/WissensSammlung.git
+   cd WissensSammlung
+   ```
+
+2. Vor dem Arbeiten, immer den aktuellen Stand holen:
+   ```
+   git pull origin main
+   ```
+
+3. Änderungen vornehmen und committen:
+   ```
+   # Änderungen an Dateien vornehmen
+   git add .
+   git commit -m "Beschreibung der Änderungen"
+   ```
+
+4. Änderungen auf GitHub pushen:
+   ```
+   git push origin main
+   ```
+
+5. Wenn Sie zum iMac wechseln:
+   ```
+   cd WissensSammlung
+   git pull origin main
+   # Arbeiten Sie nun an Ihren Dateien
+   ```
+
+6. Nach dem Arbeiten auf dem iMac:
+   ```
+   git add .
+   git commit -m "Beschreibung der Änderungen auf dem iMac"
+   git push origin main
+   ```
+
+7. Zurück auf dem MacBook:
+   ```
+   git pull origin main
+   # Fahren Sie mit der Arbeit fort
+   ```
+
+Wichtige Hinweise:
+
+- Führen Sie immer ein `git pull` aus, bevor Sie mit der Arbeit beginnen, um sicherzustellen, dass Sie die neueste Version haben.
+- Committen und pushen Sie regelmäßig, um Ihre Arbeit zu sichern und zwischen den Geräten zu synchronisieren.
+- Vermeiden Sie, gleichzeitig auf beiden Geräten an denselben Dateien zu arbeiten, um Konflikte zu minimieren.
+- Falls doch Konflikte auftreten, lösen Sie diese manuell und committen Sie die Lösung.
+
+Mit dieser Vorgehensweise können Sie effektiv an Ihrem Projekt arbeiten und die Änderungen zwischen Ihren beiden Rechnern synchron halten.
