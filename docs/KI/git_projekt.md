@@ -29,6 +29,7 @@ bearbeitet am 11. Oktober 2024
   - [Bereinigung des Git-Repositories, GitHub-Synchronisation und Setzen der Berechtigungen](#bereinigung-des-git-repositories-github-synchronisation-und-setzen-der-berechtigungen)
   - [Repository zu klonen und Änderungen vorzunehmen - zwischen zwei Rechnern (iMac und MacBook)](#repository-zu-klonen-und-änderungen-vorzunehmen---zwischen-zwei-rechnern-imac-und-macbook)
   - [GitHub - Passwort-Authentifizierung SSH verwenden](#github---passwort-authentifizierung-ssh-verwenden)
+  - [Version 1.0 erstellen](#version-10-erstellen)
 
 ## Git-Konfigurationsbefehle verstehen
 
@@ -564,3 +565,58 @@ Mit dieser Vorgehensweise können Sie effektiv an Ihrem Projekt arbeiten und die
 Jetzt sollten Sie in der Lage sein, Änderungen zu pushen und zu pullen, ohne jedes Mal Ihre Anmeldedaten eingeben zu müssen. Der SSH-Schlüssel authentifiziert Sie automatisch bei GitHub.
 
 Wenn Sie auf Ihrem iMac arbeiten möchten, müssen Sie dort einen ähnlichen Prozess durchführen: einen neuen SSH-Schlüssel generieren, ihn zu GitHub hinzufügen und die Remote-URL des Repositories aktualisieren.
+
+## Version 1.0 erstellen
+
+1. Zuerst committen Sie die Änderungen an der .gitignore-Datei:
+
+   ```
+   git add .gitignore
+   git commit -m "Update .gitignore"
+   ```
+
+2. Stellen Sie sicher, dass alle gewünschten Änderungen committed sind:
+
+   ```
+   git status
+   ```
+
+3. Erstellen Sie einen Tag für Version 1.0:
+
+   ```
+   git tag -a v1.0 -m "Version 1.0"
+   ```
+
+4. Pushen Sie den Tag zu GitHub:
+
+   ```
+   git push origin v1.0
+   ```
+
+5. Wenn Sie möchten, können Sie auch einen Release auf GitHub erstellen:
+   - Gehen Sie zur GitHub-Repository-Seite
+   - Klicken Sie auf "Releases"
+   - Klicken Sie auf "Draft a new release"
+   - Wählen Sie den Tag v1.0
+   - Geben Sie einen Titel ein, z.B. "Version 1.0"
+   - Fügen Sie Release-Notizen hinzu, die die wichtigsten Änderungen und Features beschreiben
+   - Klicken Sie auf "Publish release"
+
+6. Aktualisieren Sie die README.md-Datei, um die neue Version zu reflektieren:
+
+   ```
+   vim README.md
+   # Fügen Sie Informationen über Version 1.0 hinzu
+   git add README.md
+   git commit -m "Update README.md for version 1.0"
+   git push origin main
+   ```
+
+7. Wenn Sie einen Entwicklungszweig für zukünftige Änderungen erstellen möchten:
+
+   ```
+   git checkout -b develop
+   git push -u origin develop
+   ```
+
+Diese Schritte erstellen eine offizielle Version 1.0 Ihres Projekts, markieren sie mit einem Git-Tag und optional mit einem GitHub-Release, und bereiten das Repository für zukünftige Entwicklungen vor. Vergessen Sie nicht, die README.md und andere relevante Dokumentation zu aktualisieren, um die neue Version und eventuelle wichtige Änderungen zu reflektieren.
