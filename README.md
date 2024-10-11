@@ -124,6 +124,9 @@ Der Ordner `scripts` enthält nützliche Shell-Skripte zur Automatisierung von A
    git remote add origin git@github.com:ju1-eu/WissensSammlung.git
    git branch -M main
    git push -u origin main
+
+
+   # Version 1.0
    ```
 
 2. **Python-Umgebung einrichten** (optional)
