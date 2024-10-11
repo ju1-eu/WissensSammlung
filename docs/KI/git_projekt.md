@@ -28,6 +28,7 @@ bearbeitet am 11. Oktober 2024
     - [Globale .gitignore erweitern](#globale-gitignore-erweitern)
   - [Bereinigung des Git-Repositories, GitHub-Synchronisation und Setzen der Berechtigungen](#bereinigung-des-git-repositories-github-synchronisation-und-setzen-der-berechtigungen)
   - [Repository zu klonen und Änderungen vorzunehmen - zwischen zwei Rechnern (iMac und MacBook)](#repository-zu-klonen-und-änderungen-vorzunehmen---zwischen-zwei-rechnern-imac-und-macbook)
+  - [GitHub - Passwort-Authentifizierung SSH verwenden](#github---passwort-authentifizierung-ssh-verwenden)
 
 ## Git-Konfigurationsbefehle verstehen
 
@@ -514,3 +515,52 @@ Wichtige Hinweise:
 - Falls doch Konflikte auftreten, lösen Sie diese manuell und committen Sie die Lösung.
 
 Mit dieser Vorgehensweise können Sie effektiv an Ihrem Projekt arbeiten und die Änderungen zwischen Ihren beiden Rechnern synchron halten.
+
+## GitHub - Passwort-Authentifizierung SSH verwenden
+
+1. Wechseln Sie zu SSH:
+   - Generieren Sie einen SSH-Schlüssel:
+     ```
+     ssh-keygen -t ed25519 -C "your_email@example.com"
+     ```
+
+2. Kopieren Sie den öffentlichen Schlüssel:
+   ```
+   cat ~/.ssh/id_ed25519.pub | pbcopy
+   ```
+   Dies kopiert den Inhalt Ihres öffentlichen Schlüssels in die Zwischenablage.
+
+3. Fügen Sie den Schlüssel zu Ihrem GitHub-Konto hinzu:
+   - Gehen Sie zu GitHub.com und melden Sie sich an.
+   - Klicken Sie auf Ihr Profilbild oben rechts und wählen Sie "Settings".
+   - Klicken Sie im linken Seitenmenü auf "SSH and GPG keys".
+   - Klicken Sie auf "New SSH key" oder "Add SSH key".
+   - Geben Sie einen aussagekräftigen Titel für den Schlüssel ein (z.B. "MacBook").
+   - Fügen Sie den kopierten öffentlichen Schlüssel in das Feld "Key" ein.
+   - Klicken Sie auf "Add SSH key".
+
+4. Ändern Sie die Remote-URL Ihres Repositories zu SSH:
+   ```
+   git remote set-url origin git@github.com:ju1-eu/WissensSammlung.git
+   ```
+
+5. Überprüfen Sie die Änderung:
+   ```
+   git remote -v
+   ```
+   Sie sollten nun die SSH-URL für Ihr Repository sehen.
+
+6. Testen Sie die SSH-Verbindung zu GitHub:
+   ```
+   ssh -T git@github.com
+   ```
+   Sie sollten eine Begrüßungsnachricht von GitHub erhalten.
+
+7. Versuchen Sie erneut zu pushen:
+   ```
+   git push origin main
+   ```
+
+Jetzt sollten Sie in der Lage sein, Änderungen zu pushen und zu pullen, ohne jedes Mal Ihre Anmeldedaten eingeben zu müssen. Der SSH-Schlüssel authentifiziert Sie automatisch bei GitHub.
+
+Wenn Sie auf Ihrem iMac arbeiten möchten, müssen Sie dort einen ähnlichen Prozess durchführen: einen neuen SSH-Schlüssel generieren, ihn zu GitHub hinzufügen und die Remote-URL des Repositories aktualisieren.
