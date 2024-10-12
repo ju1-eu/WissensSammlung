@@ -26,12 +26,14 @@ meinenv/
 
 # LaTeX
 *.aux *.log *.out *.toc *.bbl *.blg *.fdb_latexmk *.synctex.gz *.fls *.bcf *.run.xml
-
+docs/MindMaps/mindmap.pdf
+docs/LaTeX/latex_vorlage.pdf
+docs/start.md
 # HTML
 *.html
 # Ausnahme: Verfolge die Datei template.html
 !template.html
 
 # Editor spezifisch
-#.vscode/
+!.vscode/
 .idea/
