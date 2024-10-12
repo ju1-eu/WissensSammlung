@@ -182,25 +182,47 @@ Das Makefile nutzt latexmk für effiziente, inkrementelle Kompilierungen.
 
 ```
 WissensSammlung/
-├── LICENSE
-├── README.md
-├── Makefile
-├── environment.yml
-├── requirements.txt
-├── template.html
+├── .git/
+├── .gitignore
 ├── docs/
 │   ├── KI/
+│   │   ├── KI-ChatGPT-Claude.md
+│   │   ├── KI_Prompts.md
+│   │   ├── Python-Umgebung.md
+│   │   ├── git_projekt.md
+│   │   ├── markdown_styles.css
+│   │   └── projekt_ideen_prompts.md
 │   ├── LaTeX/
+│   │   ├── images/
+│   │   ├── Makefile
+│   │   ├── colors_settings.tex
+│   │   ├── latex_vorlage.tex
+│   │   ├── listing_settings.tex
+│   │   └── references.bib
 │   ├── MindMaps/
+│   │   ├── Makefile
+│   │   └── mindmap.tex
 │   ├── images/
+│   │   └── bild.txt
+│   ├── LICENSE
+│   ├── README.md
+│   ├── To-Do-Liste.md
 │   ├── markdown_styles.css
-│   ├── start.md
 ├── scripts/
-│   ├── backup.sh
+│   ├── add_front_matter.sh
+│   ├── backup_cloud_start.sh
+│   ├── backup_usbstick_start.sh
 │   ├── git_setup.sh
 │   └── setup_environment.sh
 ├── src/
+│   ├── test_install.py
+│   ├── test_installation.ipynb
 │   └── test_installation.py
+├── Makefile
+├── README.md
+├── environment.yml
+├── requirements.txt
+└── template.html
 ```
 
 ## Mitwirken
