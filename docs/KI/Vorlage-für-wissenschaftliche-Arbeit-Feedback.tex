@@ -1,0 +1,490 @@
+\documentclass[a4paper,12pt]{article}
+
+% Pakete
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % Latin Modern Schriftart
+\usepackage{amsmath} % Erweiterte mathematische Funktionalität
+\usepackage{amssymb} % Zusätzliche mathematische Symbole
+\usepackage{microtype} % Verbesserte Typografie
+\usepackage{graphicx} % Für Grafiken
+\usepackage{booktabs} % Für schöne Tabellen
+\usepackage{caption} % Für anpassbare Beschriftungen
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{natbib}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
+%\usepackage{tocloft}
+
+% Globale Einstellung für alle Listen
+\setlist{noitemsep, topsep=0pt}
+
+% Definieren Sie die Farbe
+\definecolor{darkroyalblue}{RGB}{0, 35, 102}
+
+% Anpassungen für das Inhaltsverzeichnis
+\renewcommand{\cftsecfont}{\color{darkroyalblue}}
+\renewcommand{\cftsubsecfont}{\color{darkroyalblue}}
+\renewcommand{\cftsubsubsecfont}{\color{darkroyalblue}}
+\renewcommand{\cfttoctitlefont}{\huge\bfseries\color{darkroyalblue}}
+
+% Formatierung
+\onehalfspacing
+\renewcommand{\normalsize}{\fontsize{12pt}{14pt}\selectfont}
+\renewcommand{\large}{\fontsize{14pt}{17pt}\selectfont}
+
+% Listing-Einstellungen
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    language=[LaTeX]TeX,
+    commentstyle=\color{green!50!black},
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+}
+
+% hyperref sollte als letztes Paket geladen werden
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkroyalblue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Redaktionelles Feedback: LaTeX-Vorlage},
+    pdfpagemode=FullScreen,
+}
+
+\title{Umfassendes Redaktionelles Feedback: LaTeX-Vorlage für wissenschaftliche Ausarbeitung}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Allgemeine Einschätzung}
+
+Die vorliegende Vorlage bietet eine solide Grundstruktur für eine wissenschaftliche Arbeit in LaTeX. Sie enthält alle wesentlichen Elemente und folgt einem logischen Aufbau. Die Hinweise zur Verwendung der Vorlage sind hilfreich und geben dem Autor eine gute Orientierung.
+
+\section{Stärken}
+
+\begin{enumerate}
+    \item Klare Struktur: Die Gliederung ist übersichtlich und folgt dem typischen Aufbau einer wissenschaftlichen Arbeit.
+    \item Vollständigkeit: Alle wichtigen Abschnitte (Kurzfassung, Einleitung, Hauptteil, Schlussfolgerung, Literaturverzeichnis) sind vorhanden.
+    \item Flexibilität: Die Vorlage lässt Raum für Anpassungen an spezifische Themen.
+    \item Hilfreiche Hinweise: Die einleitenden Anmerkungen geben wertvolle Tipps zur Erstellung der Arbeit.
+\end{enumerate}
+
+\section{Verbesserungsvorschläge und Umsetzung}
+
+\subsection{Formale Aspekte}
+
+\subsubsection{Seitenzahlen und Inhaltsverzeichnis}
+LaTeX erstellt automatisch Seitenzahlen. Stellen Sie sicher, dass im Präambel-Bereich folgende Zeile vorhanden ist:
+\begin{lstlisting}
+\pagestyle{plain}
+\end{lstlisting}
+
+Für das Inhaltsverzeichnis fügen Sie an der gewünschten Stelle ein:
+\begin{lstlisting}
+\tableofcontents
+\end{lstlisting}
+
+\subsubsection{Abbildungs- und Tabellenverzeichnis}
+Fügen Sie nach dem Inhaltsverzeichnis folgende Befehle ein:
+\begin{lstlisting}
+\listoffigures
+\listoftables
+\end{lstlisting}
+
+\subsubsection{Formatierungsrichtlinien}
+Fügen Sie folgende Zeilen in die Präambel ein:
+
+\begin{lstlisting}
+\usepackage[a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[font=small,labelfont=bf]{caption}
+
+% Schriftgrößen definieren
+\renewcommand{\normalsize}{\fontsize{12pt}{14pt}\selectfont}
+\renewcommand{\large}{\fontsize{14pt}{17pt}\selectfont}
+\end{lstlisting}
+
+\subsection{Inhaltliche Ergänzungen}
+
+\subsubsection{Forschungsmethodik im Grundlagenteil}
+Fügen Sie folgenden Abschnitt in den Grundlagenteil ein:
+
+\begin{lstlisting}
+\section{Forschungsmethodik}
+Beschreiben Sie hier die grundlegenden Forschungsmethoden, die in Ihrem Fachgebiet relevant sind. Erklären Sie Vor- und Nachteile verschiedener Ansätze.
+\end{lstlisting}
+
+\subsubsection{Erweiterter Methodikteil}
+Ergänzen Sie den Methodikteil wie folgt:
+
+\begin{lstlisting}
+\section{Methodik}
+\subsection{Forschungsdesign}
+Beschreiben Sie das gewählte Forschungsdesign und begründen Sie Ihre Wahl.
+
+\subsection{Datenerhebung}
+Erläutern Sie die Methoden der Datenerhebung, z.B. Interviews, Fragebögen, Experimente.
+
+\subsection{Datenanalyse}
+Beschreiben Sie die Verfahren zur Datenanalyse, z.B. statistische Methoden, qualitative Inhaltsanalyse.
+\end{lstlisting}
+
+\subsubsection{Ethische Überlegungen und Datenschutz}
+Fügen Sie folgenden Abschnitt hinzu:
+
+\begin{lstlisting}
+\section{Ethische Überlegungen und Datenschutz}
+Diskutieren Sie ethische Aspekte Ihrer Forschung und erläutern Sie Maßnahmen zum Datenschutz.
+\end{lstlisting}
+
+\subsubsection{Fachübergreifende Betrachtungen}
+Ergänzen Sie folgenden optionalen Abschnitt:
+
+\begin{lstlisting}
+\section{Interdisziplinäre Perspektiven}
+Diskutieren Sie hier, wie Ihre Forschung mit anderen Fachgebieten in Verbindung steht und welche fachübergreifenden Erkenntnisse gewonnen werden können.
+\end{lstlisting}
+
+\subsection{Sprachlich-formale Aspekte}
+
+\subsubsection{Textverständlichkeit}
+Fügen Sie folgende Checkliste in die Einleitung der Vorlage ein:
+
+\begin{itemize}
+  \item[$\square$] Kurze, prägnante Sätze verwenden (max. 20 Wörter pro Satz)
+  \item[$\square$] Fachbegriffe bei erster Verwendung erklären
+  \item[$\square$] Einheitliche Terminologie durchgängig beibehalten
+  \item[$\square$] Füllwörter und überflüssige Fremdworte vermeiden
+  \item[$\square$] Logischen Aufbau innerhalb von Absätzen und Kapiteln sicherstellen
+\end{itemize}
+
+\subsubsection{Strukturelle Leseunterstützung}
+Ergänzen Sie folgende Hinweise:
+
+\begin{lstlisting}
+\begin{itemize}
+  \item Verwenden Sie Zwischenüberschriften (\texttt{\textbackslash subsection\{\}}, \texttt{\textbackslash subsubsection\{\}}), um lange Textpassagen zu strukturieren
+  \item Setzen Sie Aufzählungen (\texttt{itemize}) und Nummerierungen (\texttt{enumerate}) ein, um Punkte übersichtlich darzustellen
+  \item Nutzen Sie Tabellen zur Darstellung von Vergleichen oder komplexen Informationen
+  \item Illustrieren Sie komplexe Zusammenhänge durch Diagramme oder Schaubilder
+\end{itemize}
+\end{lstlisting}
+
+\subsubsection{Textgestaltung}
+Fügen Sie folgende Anweisungen hinzu:
+
+\begin{lstlisting}
+\begin{itemize}
+  \item Beginnen Sie jedes Kapitel mit einer kurzen Übersicht der behandelten Themen
+  \item Schließen Sie jedes Kapitel mit einer Zusammenfassung der Hauptpunkte ab
+  \item Verwenden Sie Überleitungen zwischen Abschnitten, um den roten Faden zu verdeutlichen
+  \item Nutzen Sie aussagekräftige Überschriften, die den Inhalt des folgenden Abschnitts präzise wiedergeben
+\end{itemize}
+\end{lstlisting}
+
+\subsection{Ausdruck \& Stil}
+
+Ergänzen Sie folgende Stilrichtlinien:
+
+\begin{lstlisting}
+\begin{itemize}
+  \item Verwenden Sie eine sachliche und objektive Sprache
+  \item Vermeiden Sie umgangssprachliche Ausdrücke und emotionale Formulierungen
+  \item Setzen Sie Fachbegriffe präzise ein, ohne sie zu überstrapazieren
+  \item Formulieren Sie Aussagen vorsichtig und differenziert (z.B. ``Die Ergebnisse deuten darauf hin, dass\ldots'' statt ``Die Ergebnisse beweisen, dass\ldots'')
+  \item Vermeiden Sie Füllwörter wie ``offensichtlich'', ``natürlich'', ``selbstverständlich''
+\end{itemize}
+\end{lstlisting}
+
+\subsection{Rechtschreibung \& Grammatik}
+
+Fügen Sie folgende Checkliste ein:
+
+\begin{itemize}
+  \item[$\square$] Rechtschreibprüfung durchgeführt (z.B. mit \texttt{aspell})
+  \item[$\square$] Grammatik und Zeichensetzung überprüft
+  \item[$\square$] Konsistente Verwendung von Fachbegriffen sichergestellt
+  \item[$\square$] Einheitliche Schreibweise von Zahlen (ausgeschrieben vs. Ziffern) beachtet
+  \item[$\square$] Korrekte Anwendung von Bindestrichen und Gedankenstrichen überprüft
+  \item[$\square$] Text von einer zweiten Person Korrektur lesen lassen
+\end{itemize}
+
+\subsection{Grafiken, Tabellen \& Codeausschnitte}
+
+Ergänzen Sie folgende Richtlinien:
+
+\begin{lstlisting}
+\begin{itemize}
+  \item Jede Abbildung und Tabelle mit einer eindeutigen Nummer und einem aussagekräftigen Titel versehen:
+    \begin{verbatim}
+    \begin{figure}[htbp]
+      \centering
+      \includegraphics[width=0.8\textwidth]{bildname}
+      \caption{Aussagekräftiger Titel}
+      \label{fig:eindeutigelabel}
+    \end{figure}
+    \end{verbatim}
+  \item Achsenbeschriftungen in Diagrammen vollständig und lesbar gestalten (bei Verwendung von TikZ oder pgfplots)
+  \item Legende für alle verwendeten Symbole und Farben hinzufügen
+  \item Quellenangaben für übernommene oder adaptierte Grafiken hinzufügen
+  \item Im Text auf jede Abbildung und Tabelle verweisen (z.B. ``siehe Abbildung~\ref{fig:eindeutigelabel}'')
+  \item Für komplexe Abbildungen zusätzliche Erläuterungen im Text geben
+\end{itemize}
+\end{lstlisting}
+
+\section{Fazit}
+
+Die Vorlage bietet eine solide Basis für eine wissenschaftliche Ausarbeitung in LaTeX. Mit den vorgeschlagenen Ergänzungen und Präzisierungen, insbesondere im Hinblick auf LaTeX-spezifische Formatierungen und Befehle, kann sie zu einem noch wertvolleren Instrument für Studierende und Forschende werden. Es ist wichtig, dass die Autoren die Vorlage als flexibles Gerüst verstehen und sie an die spezifischen Anforderungen ihres Fachgebiets und ihrer Forschungsfrage anpassen, dabei aber stets die Prinzipien guter wissenschaftlicher Praxis und die Möglichkeiten von LaTeX optimal nutzen.
+
+
+\section{Struktureller Aufbau einer schriftlichen Ausarbeitung}
+
+\subsection{Allgemeine Struktur}
+\begin{enumerate}
+    \item Titelei
+    \item Textteil
+    \item Anhang
+\end{enumerate}
+
+\subsection{Kurzfassung (Abstract)}
+\textbf{Zweck}: Prägnante Darstellung der wichtigsten Inhalte
+\begin{itemize}
+    \item \textbf{Eigenschaften}:
+    \begin{itemize}
+        \item Objektiv und kurz
+        \item Klare Sprache und Struktur
+        \item Enthält alle wesentlichen Fragestellungen, Ansätze und Erkenntnisse
+    \end{itemize}
+    \item \textbf{Wichtige Aspekte}:
+    \begin{itemize}
+        \item Unabhängig vom Rest der Arbeit
+        \item Enthält alle wichtigen Inhalte (Spoiler, kein Teaser)
+        \item Keine Meta-Formulierungen oder Quellenangaben
+    \end{itemize}
+\end{itemize}
+
+\subsection{Einleitung}
+\textbf{Inhalt}:
+\begin{itemize}
+    \item Vorstellung und Motivation des Themas
+    \item Auflistung der Fragestellungen
+    \item Überblick über die Problembehandlung
+\end{itemize}
+\textbf{Wichtige Aspekte}:
+\begin{itemize}
+    \item Relevanz und Aktualität des Themas darstellen
+    \item Zentrale Fragen auflisten
+    \item Kontext und Hintergrundwissen vermitteln
+\end{itemize}
+
+\subsection{Grundlagen}
+\textbf{Zweck}: Definition zentraler Begriffe und Einführung wichtiger Konzepte\\
+\textbf{Fokus}: Problembezogene Aspekte hervorheben\\
+\textbf{Wichtige Aspekte}:
+\begin{itemize}
+    \item Problemorientierte Definitionen statt Lexikon-Paraphrasierungen
+    \item Diskussion von Möglichkeiten, Herausforderungen und Limitierungen
+    \item Abgrenzung des Themas
+\end{itemize}
+
+\subsection{Hauptteil}
+\textbf{Inhalt}: Abhängig von Thema und Vorgehensweise\\
+\textbf{Mögliche Bestandteile}:
+\begin{itemize}
+    \item Beschreibung eines Entwurfs
+    \item Umsetzung und Umsetzungsalternativen
+    \item Evaluierung und Bewertung
+\end{itemize}
+
+\subsection{Schlussteil}
+\textbf{Inhalt}:
+\begin{itemize}
+    \item Zusammenfassung der Kernaussagen
+    \item Beantwortung der Forschungsfragen
+    \item Kritische Betrachtung der eigenen Arbeit
+    \item Ausblick auf zukünftige Arbeiten
+\end{itemize}
+\textbf{Wichtige Aspekte}:
+\begin{itemize}
+    \item Keine Quellenangaben
+    \item Raum für eigene Sichtweisen und Meinungen
+\end{itemize}
+
+\subsection{Literaturverzeichnis und Quellenangaben}
+\textbf{Grundsätze}:
+\begin{itemize}
+    \item Nur zitierte Quellen aufführen
+    \item Einheitliche Formatierung der Verweise
+\end{itemize}
+\textbf{Wichtige Aspekte}:
+\begin{itemize}
+    \item Verwendung von Literaturverwaltungsprogrammen
+    \item Vollständige Angaben zu jeder Quelle
+    \item Kritische Bewertung von Internetquellen
+    \item Klare Abgrenzung zwischen Literaturaussagen und eigener Auslegung
+\end{itemize}
+
+\begin{quote}
+``Die Kurzfassung ist keine Einleitung. Sie muss unabhängig von der Arbeit betrachtet werden.''
+\end{quote}
+
+\section{Inhalt \& roter Faden}
+
+\subsection{Allgemeine Prinzipien}
+\begin{itemize}
+    \item Nachvollziehbare Argumentation für Lesende
+    \item Relevanz jedes Inhalts für das Ergebnis muss klar sein
+    \item Betrachtung von Argumenten aus verschiedenen Perspektiven
+    \item Inhalte müssen relevant, richtig, sachlich und nachvollziehbar sein
+    \item Fähigkeit zur Unterscheidung zwischen Wichtigem und Unwichtigem demonstrieren
+\end{itemize}
+
+\subsection{Roter Faden}
+Sichtbar auf mehreren Ebenen:
+\begin{enumerate}
+    \item Gliederungsebene
+    \item Gedankliche Ebene
+    \item Sprachliche Ebene
+\end{enumerate}
+
+\section{Gliederung}
+
+\subsection{Wichtige Aspekte}
+\begin{itemize}
+    \item \textbf{Logischer Aufbau} der Gliederung
+    \item Inhaltliche Schwerpunkte in der Struktur erkennbar
+    \item Angemessene Gliederungstiefe (nicht zu zersplittert)
+    \item Gleicher Abstraktionslevel bei gleicher Gliederungstiefe
+    \item Bezug zur Fragestellung stets erkennbar
+\end{itemize}
+
+\subsection{Strukturierung}
+\begin{itemize}
+    \item Verwendung von \verb|\section|, \verb|\subsection|, \verb|\paragraph|
+    \item Problem vor der Lösung darstellen
+    \item Einleitung, Hauptteil, Schluss auch in einzelnen Abschnitten
+    \item Aufeinander aufbauende Absätze
+    \item Vermeidung von ``Micro-Absätzen''
+\end{itemize}
+
+\section{Argumentation}
+
+\subsection{Grundsätze}
+\begin{itemize}
+    \item Objektive Nachprüfbarkeit von Aussagen
+    \item Sachliche Begründung jeder Entscheidung
+    \item Korrekte, genaue und vollständige Darstellung von Thesen, Argumenten und Beispielen
+    \item Kritische Diskussion des Problems und möglicher Nachteile
+\end{itemize}
+
+\subsection{Wichtige Punkte}
+\begin{itemize}
+    \item Ausreichende Menge relevanter, korrekter und aktueller Argumente
+    \item Verknüpfung von Informationen
+    \item Vermeidung von Allaussagen und Pauschalisierungen
+    \item Nachvollziehbare Begründungen statt bloßer Behauptungen
+    \item Vorsicht bei der Verwendung von Werbebegriffen
+\end{itemize}
+
+\section{Gewichtung}
+
+\subsection{Prinzipien}
+\begin{itemize}
+    \item Wichtige Aussagen erhalten mehr Platz
+    \item Minimierung von Wiederholungen und Trivialitäten
+    \item Verweis auf externe Quellen für allgemein bekannte Informationen
+    \item Angemessene Würdigung zeitintensiver Forschungstätigkeiten
+\end{itemize}
+
+\begin{quote}
+``Lesende mögen keine anderthalb Seiten, die keinen Beitrag liefern''
+\end{quote}
+
+
+\section{Weitere wichtige Formalien}
+
+\subsection{Grundprinzip}
+\begin{itemize}
+    \item Einheitlichkeit, Übersichtlichkeit und Systematik
+\end{itemize}
+
+\subsection{Umgang mit Fachbegriffen und Fremdwörtern}
+\begin{itemize}
+    \item \textbf{Erste Verwendung}: Kenntlich machen (z.B. mit \verb|\emph|) und kurz erläutern
+    \item Bevorzugung deutscher Begriffe, wenn möglich
+    \item Erklärung durch Übersetzung oder Nebensatz/Fußnote
+\end{itemize}
+
+\subsection{Abkürzungen}
+\begin{itemize}
+    \item Sparsame und übliche Verwendung
+    \item Aufschlüsselung bei erster Verwendung
+    \item Keine Abkürzungen am Satzanfang
+    \item Korrekte Formatierung mit Leerzeichen (z.B.~u.\,a.)
+\end{itemize}
+
+\subsection{Struktur und Gliederung}
+\begin{itemize}
+    \item Mindestens zwei Unterpunkte bei Verwendung von Unterpunkten
+    \item Vermeidung von direkter Subsection nach Section ohne Text
+    \item Verwendung von ``Topic Sentences'' am Anfang von Sections
+\end{itemize}
+
+\subsection{Quellenangaben und URLs}
+\begin{itemize}
+    \item URLs als Fußnote oder Referenz, nicht im Fließtext
+    \item Bei Produktnennungen: URL als Fußnote
+    \item Verwendung von \verb|\url|-Umgebung in LaTeX
+\end{itemize}
+
+\subsection{Schreibstil}
+\begin{itemize}
+    \item Vermeidung der ersten Person Singular (außer bei eigenen Leistungen)
+    \item Aufzählungen nur bei genaueren Erklärungen, sonst Fließtext
+    \item Keine zusätzlichen Formatierungen in Überschriften
+\end{itemize}
+
+\subsection{LaTeX-spezifische Hinweise}
+\begin{itemize}
+    \item Absatztrennung durch Leerzeile, nicht \verb|\\|
+    \item Verwendung von \verb|--| für Gedankenstriche
+    \item Nutzung von \verb|~| für geschützte Leerzeichen
+    \item Referenzen für alle Quellen im Quellenverzeichnis
+    \item Korrekte Formatierung von Firmen-/Organisationsnamen in .bib-Dateien
+\end{itemize}
+
+\subsection{Korrektur und Überarbeitung}
+\begin{itemize}
+    \item \textbf{Mehrfache Überarbeitung vor Abgabe}
+    \item Beseitigung von Wiederholungen, Umstellung von Abschnitten
+    \item Überprüfung des roten Fadens und der Argumentation
+    \item Externe Rechtschreibkontrolle
+    \item Überprüfung von Layout, Referenzen und Literaturverzeichnis
+\end{itemize}
+
+\begin{quote}
+``Eine gute schriftliche Ausarbeitung braucht eine gute Argumentation und eine gute Schlussüberarbeitung.''
+\end{quote}
+
+\subsection{Literaturverzeichnis}
+\begin{itemize}
+    \item Erstellung als .bib-Datei
+    \item Korrekte Formatierung von Autorennamen und Organisationen
+    \item Trennung mehrerer Autoren mit ``and'', nicht Komma
+\end{itemize}
+
+\end{document}

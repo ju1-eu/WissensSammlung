@@ -1,3 +1,9 @@
+---
+title: "CONTRIBUTING"
+author: "Jan Unger"
+date: "2024-10-13"
+---
+
 # Mitwirken am Projekt
 
 Um eine reibungslose Zusammenarbeit zu gewährleisten, beachten Sie bitte die folgenden Richtlinien:

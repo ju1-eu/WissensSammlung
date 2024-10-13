@@ -4,7 +4,7 @@
 TEX_FILES = $(filter-out colors_settings.tex listing_settings.tex, $(wildcard *.tex))
 
 # Dateien, die Bibliographie-Kompilierung benötigen
-BIB_FILES = KI-Prompts.tex latex_vorlage.tex 01-Zsf-Drehstromgenerator.tex
+BIB_FILES = wissenschaftlicheArbeit-Vorlage.tex wissenschaftlicheArbeit-Feedback.tex latex_vorlage.tex
 
 # Standardziel: Kompiliere alle PDFs
 all: $(TEX_FILES:.tex=.pdf)
@@ -23,7 +23,7 @@ all: $(TEX_FILES:.tex=.pdf)
 
 # Bereinige Hilfsdateien
 clean:
-	rm -f *.aux *.log *.out *.toc *.bbl *.blg *.fdb_latexmk *.synctex.gz *.fls *.bcf *.run.xml
+	rm -f *.aux *.log *.out *.toc *.bbl *.blg *.fdb_latexmk *.synctex.gz *.fls *.bcf *.run.xml *.lof *.lot
 
 # Bereinige alle generierten Dateien einschließlich PDFs
 cleanall: clean

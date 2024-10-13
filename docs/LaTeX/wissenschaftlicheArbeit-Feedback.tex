@@ -1,0 +1,356 @@
+% Dokumentenklasse
+\documentclass[12pt,a4paper,oneside]{article}
+
+% Pakete
+% Schriftarten und Typografie
+\usepackage{fontspec}  % Ermöglicht die Verwendung von TrueType/OpenType-Schriftarten mit XeLaTeX
+\usepackage[T1]{fontenc} % Korrekte Darstellung von Umlauten und Sonderzeichen
+\usepackage{textcomp}   % Zusätzliche Schriftzeichen wie Euro-Symbol
+\usepackage{microtype}  % Optimiert die Mikrotypografie für bessere Lesbarkeit
+
+% Hauptschriftart einstellen (Tex Gyre Termes, aber anpassbar)
+\setmainfont[
+    Path = /Users/jan/Library/Fonts/,  % Pfad zu den Schriftarten
+    BoldFont = texgyretermes-bold.otf,
+    ItalicFont = texgyretermes-italic.otf,
+    BoldItalicFont = texgyretermes-bolditalic.otf
+]{texgyretermes-regular.otf}
+
+% Monospaced-Schriftart für Quellcode oder ähnliches
+\setmonofont{Source Code Pro}
+
+
+\usepackage[ngerman]{babel}   % Deutsche Sprachunterstützung
+\usepackage[german=quotes]{csquotes}
+
+\usepackage{amsmath} % Erweiterte mathematische Funktionalität
+\usepackage{amssymb} % Zusätzliche mathematische Symbole
+\usepackage{microtype} % Verbesserte Typografie
+\usepackage{graphicx} % Für Grafiken
+\usepackage{tikz}
+\usetikzlibrary{mindmap, shapes, backgrounds}
+\usepackage{setspace}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{subcaption} % Mehrere Unterbilder
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{url}
+
+% Tabellen und Listen
+\usepackage{booktabs}   % Hochwertige Tabellen
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{tabularx}   % Flexible Tabellen
+\usepackage{enumitem}   % Anpassen von Aufzählungen und Listen
+\setlist[enumerate,1]{label=\alph*)}
+\setlist{itemsep=0pt}   % Kein Abstand zwischen Listenelementen
+
+% Literaturverzeichnis
+\usepackage[backend=biber, style=ieee, defernumbers=true]{biblatex}  % Verwendung von Biber als Backend und IEEE-Stil (kompatibel mit XeLaTeX)
+\addbibresource{references.bib}  % Einbinden der Bibliographie-Datei
+\ExecuteBibliographyOptions{backref=true,backrefstyle=three+,url=true,urldate=comp,abbreviate=false,maxbibnames=20}
+\DeclareBibliographyCategory{cited}
+\let\defaultcite\cite
+\renewcommand*\cite[2][]{\addtocategory{cited}{#2}\defaultcite[#1]{#2}}
+
+% Farben und Listings für Quellcode
+\usepackage[dvipsnames,svgnames,x11names]{xcolor} % Erweiterte Farbunterstützung
+\input{colors_settings.tex}
+\usepackage{listings}
+\input{listing_settings.tex}
+
+% Fußnoten
+\usepackage{footnote}   % Verbesserte Fußnotenverwaltung
+\usepackage{fnpct}      % Verwaltung der Fußnoten und Interaktion mit Satzzeichen
+\setfnpct{after-punct-space={-.2em}}
+
+% Globale Einstellung für alle Listen
+\setlist{noitemsep, topsep=0pt}
+
+% Formatierung
+\onehalfspacing
+\renewcommand{\normalsize}{\fontsize{12pt}{14pt}\selectfont}
+\renewcommand{\large}{\fontsize{14pt}{17pt}\selectfont}
+
+% Umbenennen der Verzeichnisse
+\renewcommand{\listfigurename}{Abbildungen}
+\renewcommand{\listtablename}{Tabellen}
+\renewcommand{\refname}{Literatur}
+\renewcommand{\figurename}{Abb.}
+\renewcommand{\tablename}{Tab.}
+
+% Hyperlinks und Querverweise
+\usepackage[hidelinks]{hyperref}  % Versteckte Links (ohne Umrandung)
+\usepackage[ngerman]{cleveref}    % Intelligente Querverweise
+\hypersetup{
+    colorlinks=true,
+    linkcolor=meinblue,
+    filecolor=meinblue,      
+    urlcolor=meinblue,
+    citecolor=meinblue, % Farbe für Literaturverweise
+    pdftitle={Redaktionelles Feedback: LaTeX-Vorlage},
+    pdfpagemode=FullScreen,
+}
+
+
+\title{Umfassendes Redaktionelles Feedback: LaTeX-Vorlage für wissenschaftliche Ausarbeitung}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Struktureller Aufbau einer schriftlichen Ausarbeitung}
+
+% Beispiel für eine Fußnote mit URL
+Google\footnote{\url{https://www.google.com}}.
+
+Tipps für schriftliche Ausarbeitungen\footnote{\url{https://osm.hpi.de/theses/tipps}}.
+
+% Beispiel für eine Zitation
+OpenAI \cite{statista2024openai} ist ein führendes KI-Unternehmen, das für Anwendungen wie ChatGPT\footnote{\url{https://chatgpt.com/?model=gpt-4}} und Dall-E bekannt ist.
+
+
+\subsection{Allgemeine Struktur}
+\begin{enumerate}
+    \item Titelei
+    \item Textteil
+    \item Anhang
+\end{enumerate}
+
+\subsection{Kurzfassung (Abstract)}
+\textbf{Zweck}: Prägnante Darstellung der wichtigsten Inhalte
+\begin{itemize}
+    \item \textbf{Eigenschaften}:
+    \begin{itemize}
+        \item Objektiv und kurz
+        \item Klare Sprache und Struktur
+        \item Enthält alle wesentlichen Fragestellungen, Ansätze und Erkenntnisse
+    \end{itemize}
+    \item \textbf{Wichtige Aspekte}:
+    \begin{itemize}
+        \item Unabhängig vom Rest der Arbeit
+        \item Enthält alle wichtigen Inhalte (Spoiler, kein Teaser)
+        \item Keine Meta-Formulierungen oder Quellenangaben
+    \end{itemize}
+\end{itemize}
+
+\subsection{Einleitung}
+\textbf{Inhalt}:
+\begin{itemize}
+    \item Vorstellung und Motivation des Themas
+    \item Auflistung der Fragestellungen
+    \item Überblick über die Problembehandlung
+\end{itemize}
+\textbf{Wichtige Aspekte}:
+\begin{itemize}
+    \item Relevanz und Aktualität des Themas darstellen
+    \item Zentrale Fragen auflisten
+    \item Kontext und Hintergrundwissen vermitteln
+\end{itemize}
+
+\subsection{Grundlagen}
+\textbf{Zweck}: Definition zentraler Begriffe und Einführung wichtiger Konzepte\\
+\textbf{Fokus}: Problembezogene Aspekte hervorheben\\
+\textbf{Wichtige Aspekte}:
+\begin{itemize}
+    \item Problemorientierte Definitionen statt Lexikon-Paraphrasierungen
+    \item Diskussion von Möglichkeiten, Herausforderungen und Limitierungen
+    \item Abgrenzung des Themas
+\end{itemize}
+
+\subsection{Hauptteil}
+\textbf{Inhalt}: Abhängig von Thema und Vorgehensweise\\
+\textbf{Mögliche Bestandteile}:
+\begin{itemize}
+    \item Beschreibung eines Entwurfs
+    \item Umsetzung und Umsetzungsalternativen
+    \item Evaluierung und Bewertung
+\end{itemize}
+
+\subsection{Schlussteil}
+\textbf{Inhalt}:
+\begin{itemize}
+    \item Zusammenfassung der Kernaussagen
+    \item Beantwortung der Forschungsfragen
+    \item Kritische Betrachtung der eigenen Arbeit
+    \item Ausblick auf zukünftige Arbeiten
+\end{itemize}
+\textbf{Wichtige Aspekte}:
+\begin{itemize}
+    \item Keine Quellenangaben
+    \item Raum für eigene Sichtweisen und Meinungen
+\end{itemize}
+
+\subsection{Literaturverzeichnis und Quellenangaben}
+\textbf{Grundsätze}:
+\begin{itemize}
+    \item Nur zitierte Quellen aufführen
+    \item Einheitliche Formatierung der Verweise
+\end{itemize}
+\textbf{Wichtige Aspekte}:
+\begin{itemize}
+    \item Verwendung von Literaturverwaltungsprogrammen
+    \item Vollständige Angaben zu jeder Quelle
+    \item Kritische Bewertung von Internetquellen
+    \item Klare Abgrenzung zwischen Literaturaussagen und eigener Auslegung
+\end{itemize}
+
+\begin{quote}
+\glqq Die Kurzfassung ist keine Einleitung. Sie muss unabhängig von der Arbeit betrachtet werden.\grqq{}
+\end{quote}
+
+\section{Inhalt \& roter Faden}
+
+\subsection{Allgemeine Prinzipien}
+\begin{itemize}
+    \item Nachvollziehbare Argumentation für Lesende
+    \item Relevanz jedes Inhalts für das Ergebnis muss klar sein
+    \item Betrachtung von Argumenten aus verschiedenen Perspektiven
+    \item Inhalte müssen relevant, richtig, sachlich und nachvollziehbar sein
+    \item Fähigkeit zur Unterscheidung zwischen Wichtigem und Unwichtigem demonstrieren
+\end{itemize}
+
+\subsection{Roter Faden}
+Sichtbar auf mehreren Ebenen:
+\begin{enumerate}
+    \item Gliederungsebene
+    \item Gedankliche Ebene
+    \item Sprachliche Ebene
+\end{enumerate}
+
+\section{Gliederung}
+
+\subsection{Wichtige Aspekte}
+\begin{itemize}
+    \item \textbf{Logischer Aufbau} der Gliederung
+    \item Inhaltliche Schwerpunkte in der Struktur erkennbar
+    \item Angemessene Gliederungstiefe (nicht zu zersplittert)
+    \item Gleicher Abstraktionslevel bei gleicher Gliederungstiefe
+    \item Bezug zur Fragestellung stets erkennbar
+\end{itemize}
+
+\subsection{Strukturierung}
+\begin{itemize}
+    \item Verwendung von \verb|\section|, \verb|\subsection|, \verb|\paragraph|
+    \item Problem vor der Lösung darstellen
+    \item Einleitung, Hauptteil, Schluss auch in einzelnen Abschnitten
+    \item Aufeinander aufbauende Absätze
+    \item Vermeidung von \glqq Micro-Absätzen\grqq{}
+\end{itemize}
+
+\section{Argumentation}
+
+\subsection{Grundsätze}
+\begin{itemize}
+    \item Objektive Nachprüfbarkeit von Aussagen
+    \item Sachliche Begründung jeder Entscheidung
+    \item Korrekte, genaue und vollständige Darstellung von Thesen, Argumenten und Beispielen
+    \item Kritische Diskussion des Problems und möglicher Nachteile
+\end{itemize}
+
+\subsection{Wichtige Punkte}
+\begin{itemize}
+    \item Ausreichende Menge relevanter, korrekter und aktueller Argumente
+    \item Verknüpfung von Informationen
+    \item Vermeidung von Allaussagen und Pauschalisierungen
+    \item Nachvollziehbare Begründungen statt bloßer Behauptungen
+    \item Vorsicht bei der Verwendung von Werbebegriffen
+\end{itemize}
+
+\section{Gewichtung}
+
+\subsection{Prinzipien}
+\begin{itemize}
+    \item Wichtige Aussagen erhalten mehr Platz
+    \item Minimierung von Wiederholungen und Trivialitäten
+    \item Verweis auf externe Quellen für allgemein bekannte Informationen
+    \item Angemessene Würdigung zeitintensiver Forschungstätigkeiten
+\end{itemize}
+
+\begin{quote}
+\glqq Lesende mögen keine anderthalb Seiten, die keinen Beitrag liefern\grqq{}
+\end{quote}
+
+
+\section{Weitere wichtige Formalien}
+
+\subsection{Grundprinzip}
+\begin{itemize}
+    \item Einheitlichkeit, Übersichtlichkeit und Systematik
+\end{itemize}
+
+\subsection{Umgang mit Fachbegriffen und Fremdwörtern}
+\begin{itemize}
+    \item \textbf{Erste Verwendung}: Kenntlich machen (z.B. mit \verb|\emph|) und kurz erläutern
+    \item Bevorzugung deutscher Begriffe, wenn möglich
+    \item Erklärung durch Übersetzung oder Nebensatz/Fußnote
+\end{itemize}
+
+\subsection{Abkürzungen}
+\begin{itemize}
+    \item Sparsame und übliche Verwendung
+    \item Aufschlüsselung bei erster Verwendung
+    \item Keine Abkürzungen am Satzanfang
+    \item Korrekte Formatierung mit Leerzeichen (z.B.~u.\,a.)
+\end{itemize}
+
+\subsection{Struktur und Gliederung}
+\begin{itemize}
+    \item Mindestens zwei Unterpunkte bei Verwendung von Unterpunkten
+    \item Vermeidung von direkter Subsection nach Section ohne Text
+    \item Verwendung von \glqq Topic Sentences\grqq{} am Anfang von Sections
+\end{itemize}
+
+\subsection{Quellenangaben und URLs}
+\begin{itemize}
+    \item URLs als Fußnote oder Referenz, nicht im Fließtext
+    \item Bei Produktnennungen: URL als Fußnote
+    \item Verwendung von \verb|\url|-Umgebung in LaTeX
+\end{itemize}
+
+\subsection{Schreibstil}
+\begin{itemize}
+    \item Vermeidung der ersten Person Singular (außer bei eigenen Leistungen)
+    \item Aufzählungen nur bei genaueren Erklärungen, sonst Fließtext
+    \item Keine zusätzlichen Formatierungen in Überschriften
+\end{itemize}
+
+\subsection{LaTeX-spezifische Hinweise}
+\begin{itemize}
+    \item Absatztrennung durch Leerzeile, nicht \verb|\\|
+    \item Verwendung von \verb|--| für Gedankenstriche
+    \item Nutzung von \verb|~| für geschützte Leerzeichen
+    \item Referenzen für alle Quellen im Quellenverzeichnis
+    \item Korrekte Formatierung von Firmen-/Organisationsnamen in .bib-Dateien
+\end{itemize}
+
+\subsection{Korrektur und Überarbeitung}
+\begin{itemize}
+    \item \textbf{Mehrfache Überarbeitung vor Abgabe}
+    \item Beseitigung von Wiederholungen, Umstellung von Abschnitten
+    \item Überprüfung des roten Fadens und der Argumentation
+    \item Externe Rechtschreibkontrolle
+    \item Überprüfung von Layout, Referenzen und Literaturverzeichnis
+\end{itemize}
+
+\begin{quote}
+\glqq Eine gute schriftliche Ausarbeitung braucht eine gute Argumentation und eine gute Schlussüberarbeitung.\grqq{}
+\end{quote}
+
+\subsection{Literaturverzeichnis}
+\begin{itemize}
+    \item Erstellung als .bib-Datei
+    \item Korrekte Formatierung von Autorennamen und Organisationen
+    \item Trennung mehrerer Autoren mit \glqq and\grqq{}, nicht Komma
+\end{itemize}
+
+% Literaturverzeichnis
+\newpage
+\phantomsection % Ermöglicht es, dass das Inhaltsverzeichnis den richtigen Link enthält
+\addcontentsline{toc}{section}{Literatur} % Fügt "Literatur" dem Inhaltsverzeichnis als Abschnitt hinzu
+\printbibliography % Zeigt alle zitierten Einträge an
+
+\end{document}

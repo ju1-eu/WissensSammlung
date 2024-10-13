@@ -1,3 +1,9 @@
+---
+title: "README"
+author: "Jan Unger"
+date: "2024-10-13"
+---
+
 # WissensSammlung
 
 Version: 1.2

@@ -1,0 +1,179 @@
+\documentclass[a4paper,12pt]{article}
+
+% Pakete
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % Latin Modern Schriftart
+\usepackage{amsmath} % Erweiterte mathematische Funktionalität
+\usepackage{amssymb} % Zusätzliche mathematische Symbole
+\usepackage{microtype} % Verbesserte Typografie
+
+% Optionale Pakete für erweiterte Funktionalität
+\usepackage{graphicx} % Für Grafiken
+\usepackage{hyperref} % Für Hyperlinks im PDF
+\usepackage{booktabs} % Für schöne Tabellen
+\usepackage{caption} % Für anpassbare Beschriftungen
+
+% Seitenränder anpassen (optional)
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+% Zeilenabstand anpassen (optional)
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{hyperref}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{natbib}
+\usepackage{enumitem}
+% Globale Einstellung für alle Listen
+\setlist{noitemsep, topsep=0pt}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Redaktionelles Feedback: LaTeX-Vorlage},
+    pdfpagemode=FullScreen,
+}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    language=[LaTeX]TeX,
+    commentstyle=\color{green!50!black},
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+}
+
+% Formatierung
+\onehalfspacing
+\renewcommand{\normalsize}{\fontsize{12pt}{14pt}\selectfont}
+\renewcommand{\large}{\fontsize{14pt}{17pt}\selectfont}
+
+% Titelseite
+\title{[Titel der Arbeit]}
+\author{[Name des Autors]}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+% Kurzfassung
+\begin{abstract}
+[Prägnante Zusammenfassung der Arbeit in 150-250 Wörtern. Enthält die Hauptfragestellung, den methodischen Ansatz, die wichtigsten Ergebnisse und die Schlussfolgerung.]
+\end{abstract}
+\newpage
+
+% Inhaltsverzeichnis
+\tableofcontents
+\newpage
+
+% Abbildungs- und Tabellenverzeichnis
+\listoffigures
+\listoftables
+\newpage
+
+% Hauptteil
+\section{Einleitung}
+\subsection{Hintergrund und Motivation}
+[Einführung in das Thema und Erläuterung seiner Relevanz. Beschreibung des aktuellen Forschungsstands und Identifikation von Forschungslücken.]
+
+\subsection{Problemstellung und Zielsetzung}
+[Klare Formulierung der Forschungsfrage(n) und der Ziele der Arbeit.]
+
+\subsection{Aufbau der Arbeit}
+[Überblick über die Struktur der folgenden Kapitel und deren Inhalte.]
+
+\section{Grundlagen}
+\subsection{[Zentraler Begriff 1]}
+[Definition und Erläuterung des ersten zentralen Begriffs.]
+
+\subsection{[Zentraler Begriff 2]}
+[Definition und Erläuterung des zweiten zentralen Begriffs.]
+
+\subsection{[Wichtiges Konzept]}
+[Einführung und Erklärung eines für die Arbeit wichtigen Konzepts.]
+
+\subsection{Forschungsmethodik}
+[Beschreiben Sie hier die grundlegenden Forschungsmethoden, die in Ihrem Fachgebiet relevant sind. Erklären Sie Vor- und Nachteile verschiedener Ansätze.]
+
+\section{Methodik}
+\subsection{Forschungsdesign}
+[Beschreiben Sie das gewählte Forschungsdesign und begründen Sie Ihre Wahl.]
+
+\subsection{Datenerhebung}
+[Erläutern Sie die Methoden der Datenerhebung, z.B. Interviews, Fragebögen, Experimente.]
+
+\subsection{Datenanalyse}
+[Beschreiben Sie die Verfahren zur Datenanalyse, z.B. statistische Methoden, qualitative Inhaltsanalyse.]
+
+\subsection{Ethische Überlegungen und Datenschutz}
+[Diskutieren Sie ethische Aspekte Ihrer Forschung und erläutern Sie Maßnahmen zum Datenschutz.]
+
+\section{[Hauptteil - Kapitel 1]}
+\subsection{[Unterabschnitt 1]}
+[Detaillierte Ausführungen zum ersten Aspekt des Hauptteils.]
+
+\subsection{[Unterabschnitt 2]}
+[Detaillierte Ausführungen zum zweiten Aspekt des Hauptteils.]
+
+\section{[Hauptteil - Kapitel 2]}
+\subsection{Ergebnisse}
+[Präsentation der Forschungsergebnisse, ggf. mit Tabellen oder Grafiken.]
+
+\subsection{Diskussion}
+[Interpretation und kritische Bewertung der Ergebnisse im Kontext der Forschungsfrage.]
+
+\section{Schlussfolgerung und Ausblick}
+\subsection{Zusammenfassung der Hauptergebnisse}
+[Kurze Zusammenfassung der wichtigsten Erkenntnisse der Arbeit.]
+
+\subsection{Beantwortung der Forschungsfrage}
+[Explizite Beantwortung der in der Einleitung gestellten Forschungsfrage(n).]
+
+\subsection{Limitationen der Arbeit}
+[Diskussion der Grenzen und möglichen Schwächen der durchgeführten Untersuchung.]
+
+\subsection{Ausblick auf zukünftige Forschung}
+[Vorschläge für weiterführende Forschungsansätze und offene Fragen.]
+
+\subsection{Praktische Implikationen}
+[Erläutern Sie die praktische Relevanz Ihrer Forschungsergebnisse.]
+
+\section{Interdisziplinäre Perspektiven}
+[Diskutieren Sie hier, wie Ihre Forschung mit anderen Fachgebieten in Verbindung steht und welche fachübergreifenden Erkenntnisse gewonnen werden können.]
+
+% Literaturverzeichnis
+\bibliographystyle{apalike}
+\bibliography{literatur}
+
+% Anhang
+\appendix
+\section{Anhang}
+\subsection{Detaillierte Berechnungen}
+[Fügen Sie hier detaillierte Berechnungen ein, die im Hauptteil zu umfangreich wären.]
+
+\subsection{Interviewtranskripte}
+[Fügen Sie hier anonymisierte Transkripte von durchgeführten Interviews ein.]
+
+\subsection{Ergänzende Statistiken}
+[Präsentieren Sie hier zusätzliche statistische Auswertungen, die im Hauptteil nicht Platz fanden.]
+
+% Eidesstattliche Erklärung
+\section*{Eidesstattliche Erklärung}
+Ich erkläre hiermit an Eides statt, dass ich die vorliegende Arbeit selbstständig und ohne Benutzung anderer als der angegebenen Hilfsmittel angefertigt habe. Die aus fremden Quellen direkt oder indirekt übernommenen Gedanken sind als solche kenntlich gemacht.
+
+\vspace{2cm}
+\noindent
+Ort, Datum \hfill Unterschrift
+
+\end{document}
