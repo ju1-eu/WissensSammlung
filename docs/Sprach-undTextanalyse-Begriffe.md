@@ -24,6 +24,11 @@
 - **Lesestufe**: Kfz-Technik-Meistern auf Bachelor-Niveau
 
 - Erstelle mir Notizen und eine Zusammenfassung und beachte die Sprachstil-Richtlinien
+  - Erkläre mir die Abbildung
+  - Ausgabe: Markdown mit LaTeX-Mathematik
+- Erstelle eine schrittweise Berechnung
+- Erkläre mir die wichtigsten Fachwörter im Kontext
+- Visualisiere die Zusammenhänge
 
 - Was ist ?
 - Erkläre genau oder vertiefe oder Erkläre mir die Fachwörter
