@@ -1,3 +1,9 @@
+---
+title: "Sprachstil-Richtlinien"
+author: "Jan Unger"
+date: "2024-10-19"
+---
+
 # Sprachstil: klar, präzise und sachlich
 
 Lesestufe: Bachelor-Niveau. Sprache: Deutsch
@@ -43,3 +49,14 @@ Lesestufe: Bachelor-Niveau. Sprache: Deutsch
 10. **Überprüfung und Korrekturlesen**:
     - Lesen Sie Ihre Notizen nach dem Schreiben noch einmal durch.
     - Achten Sie auf Rechtschreibung, Grammatik und Verständlichkeit.
+
+
+11. mathematischen Notationskonventionen für die Verwendung von LaTeX-Mathematik in deutschsprachigen Markdown-Dokumenten.
+    - **Dezimaltrennzeichen:** Verwende das Komma `{,}` für Dezimalzahlen.
+    - **Einheiten:** Immer im Textmodus `\text{}` und durch ein geschütztes Leerzeichen `~` von der Zahl trennen.
+    - **Brüche und Formeln:** Brüche mit `\frac{}{}`, Einheiten in Textform.
+    - **Prozent:** Ohne Leerzeichen vor dem Prozentzeichen.
+    - **Winkel:** Mit `^\circ` für Grad.
+    - **Quadrat/Kubik-Einheiten:** Exponent nach der Einheit im Textmodus.
+    - **Indizes und Hochstellungen:** Mit `_{}` und `^{}`.
+    - **Vektoren** in fett `\mathbf{F}` und `\mathbf{a}`
