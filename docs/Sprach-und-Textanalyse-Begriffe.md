@@ -88,18 +88,27 @@ Letzte Aktualisierung: 2024-10-19
 
 1. Sprachstil-Richtlinien
 2. Erstelle eine Zusammenfassung von Kapitel eines Buches
-  - Titel: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – bestehen
-  - Autor: Klaus Schreiner
-  - Kapitel: Fahrwiderstand und Motorleistung
-  - Inhalt: []
+    - Titel: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – bestehen
+    - Autor: Klaus Schreiner
+    - Kapitel:
+    - Inhalt: []
 
-3.  Erstelle eine Liste der 7 Fragen aus Kapitel
+3. Erstelle eine Liste der 7 Fragen aus Kapitel
 
-4.  Löse die Aufgabe Schritt-für-Schritt, beachte die Lösung des Kapitels
+4. Löse die Aufgabe Schritt-für-Schritt, beachte die Lösung des Kapitels
+5. Erkläre die Frage ausführlich
 
-5.  Erkläre die Frage ausführlich
+6. Erklärung der Fachwörter und griechischen Buchstaben aus den Aufgaben 1, 2, 3, 4, 5, 6, 7
 
-```
+7. ABC-Liste nach Birkenbihl zu den Aufgaben 1, 2, 3, 4, 5, 6, 7
+    - in Tabellenform
+    - Hauptthema: Fahrwiderstand und Motorleistung
+8.  KAWA nach Birkenbihl zu den Aufgaben 1, 2, 3, 4, 5, 6, 7
+   - Hauptthema: Fahrwiderstand und Motorleistung
+9. Mindmap zu den Aufgaben 1, 2, 3, 4, 5, 6, 7
+    - Hauptthema: Fahrwiderstand und Motorleistung
+
+```plaintext
 # Liste der 7 Fragen aus Kapitel 1
 1. **Welche Leistung benötigt die A-Klasse bei einer Geschwindigkeit von 180 km/h?**
 2. **Wie groß ist der Benzinverbrauch in l/(100 km) bei 180 km/h?**
