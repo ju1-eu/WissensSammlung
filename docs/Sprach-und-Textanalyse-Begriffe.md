@@ -6,7 +6,7 @@ date: "2024-10-13"
 
 # Begriffe der Sprach- und Textanalyse
 
-Letzte Aktualisierung: 2024-10-19
+Letzte Aktualisierung: 2024-10-26
 
 ## Inhaltsverzeichnis
 
@@ -14,30 +14,32 @@ Letzte Aktualisierung: 2024-10-19
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [KI-Prompts](#ki-prompts)
   - [o1-preview](#o1-preview)
-    - [Fachbuch bearbeiten](#fachbuch-bearbeiten)
-    - [Buch bearbeiten](#buch-bearbeiten)
-      - [Thema: Physik -  Physikalische Größen und Messungen](#thema-physik----physikalische-größen-und-messungen)
-      - [Thema: Mathe - Vektorrechnung - Koordinatendarstellung](#thema-mathe---vektorrechnung---koordinatendarstellung)
-    - [Sprachstil: klar, präzise und sachlich](#sprachstil-klar-präzise-und-sachlich)
-  - [Sprachliche Mittel und Stilistik](#sprachliche-mittel-und-stilistik)
-    - [1. **Sprachstil**](#1-sprachstil)
-    - [2. **Metaphern**](#2-metaphern)
-    - [3. **Redewendungen**](#3-redewendungen)
-    - [4. **Analogien**](#4-analogien)
-  - [Analyse und Reflexion](#analyse-und-reflexion)
-    - [5. **Textanalyse**](#5-textanalyse)
-    - [6. **Kritische Reflexion**](#6-kritische-reflexion)
-    - [7. **Kritik**](#7-kritik)
-  - [Kreativität und Argumentation](#kreativität-und-argumentation)
-    - [8. **Brainstorming**](#8-brainstorming)
-    - [9. **Gegenargumente**](#9-gegenargumente)
-    - [10. **Redaktionelles Feedback**](#10-redaktionelles-feedback)
-  - [Fazit](#fazit)
+      - [Fachbuch bearbeiten](#fachbuch-bearbeiten)
+  - [Buch Basiswissen Verbrennungsmotor bearbeiten](#buch-basiswissen-verbrennungsmotor-bearbeiten)
+  - [Buch Tipler-Physik bearbeiten](#buch-tipler-physik-bearbeiten)
+    - [Thema: Physik -  Physikalische Größen und Messungen](#thema-physik----physikalische-größen-und-messungen)
+  - [Buch Rießinger-Mathe - Vektorrechnung](#buch-rießinger-mathe---vektorrechnung)
+  - [Sprachstil: klar, präzise und sachlich](#sprachstil-klar-präzise-und-sachlich)
+- [Sprachliche Mittel und Stilistik](#sprachliche-mittel-und-stilistik)
+  - [1. Grundlagen des Sprachstils](#1-grundlagen-des-sprachstils)
+    - [Anwendungsbeispiele im wissenschaftlichen Kontext:](#anwendungsbeispiele-im-wissenschaftlichen-kontext)
+  - [2. Metaphorische Ausdrucksformen](#2-metaphorische-ausdrucksformen)
+    - [Systematische Kategorisierung:](#systematische-kategorisierung)
+  - [3. Analytische Werkzeuge](#3-analytische-werkzeuge)
+    - [Textanalytische Methoden:](#textanalytische-methoden)
+    - [Kritische Reflexionsmethoden:](#kritische-reflexionsmethoden)
+  - [4. Kommunikative Strategien](#4-kommunikative-strategien)
+    - [Feedback-Strukturen:](#feedback-strukturen)
+  - [5. Qualitätssicherung](#5-qualitätssicherung)
+    - [Systematische Überprüfung:](#systematische-überprüfung)
+    - [Dokumentation:](#dokumentation)
+  - [Anhang: Mathematische Notationen](#anhang-mathematische-notationen)
+- [Tipps für effizientes Lesen](#tipps-für-effizientes-lesen)
 
 
 ## KI-Prompts
 
-- Thema "Physikalische Größen und Messungen"
+- Thema:
 - **Lesestufe**: Bachelor-Niveau
 
 - Erstelle mir Notizen und eine Zusammenfassung und beachte die Sprachstil-Richtlinien
@@ -84,12 +86,12 @@ Letzte Aktualisierung: 2024-10-19
 - Hilf mir, einen Blogbeitrag zu schreiben
 
 
-### Fachbuch bearbeiten
+#### Fachbuch bearbeiten
 
 1. Sprachstil-Richtlinien
 2. Erstelle eine Zusammenfassung von Kapitel eines Buches
-    - Titel: Basiswissen Verbrennungsmotor, Fragen – rechnen – verstehen – bestehen
-    - Autor: Klaus Schreiner
+    - Titel: 
+    - Autor: 
     - Kapitel:
     - Inhalt: []
 
@@ -108,20 +110,70 @@ Letzte Aktualisierung: 2024-10-19
 9. Mindmap zu den Aufgaben 1, 2, 3, 4, 5, 6, 7
     - Hauptthema: Fahrwiderstand und Motorleistung
 
-```plaintext
-# Liste der 7 Fragen aus Kapitel 1
-1. **Welche Leistung benötigt die A-Klasse bei einer Geschwindigkeit von 180 km/h?**
-2. **Wie groß ist der Benzinverbrauch in l/(100 km) bei 180 km/h?**
-3. **Welche Leistung wird bei einer Geschwindigkeit von 50 km/h benötigt? Wie groß ist dann der effektive Motorwirkungsgrad, wenn der Benzinverbrauch 5 l/(100 km) beträgt?**
-4. **Was ist beim Pkw wichtiger: der Rollwiderstand oder der Luftwiderstand?**
-5. **Was sind typische Zahlenwerte, um den Leistungsbedarf eines Pkw zu berechnen?**
-6. **Könnte man mit einem modernen Fahrzeug einen Kraftstoffverbrauch von 1 l/(100 km) realisieren?**
-7. **Wie effizient sind Pkw-Motoren im Stadtverkehr?**
-```
 
-### Buch bearbeiten
+## Buch Basiswissen Verbrennungsmotor bearbeiten
 
-Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
+**Quelle**: K. Schreiner, *Basiswissen Verbrennungsmotor: Fragen – rechnen – verstehen – bestehen*, 3., erweiterte und aktualisierte Auflage. Wiesbaden: Springer Fachmedien Wiesbaden, 2020. Verfügbar: https://doi.org/10.1007/978-3-658-29226-3
+
+- **Hauptthema**: Basiswissen Verbrennungsmotor: Fahrwiderstand und Motorleistung
+- **Thema/Kernfrage**: Wie groß ist der Benzinverbrauch in l/(100 km) bei 180 km/h?
+- **Lernziele**: Luftwiderstandskraft, Rollwiderstandskraft, mechanischer Wirkungsgrad des Antriebsstrangs, thermische Zustandsgleichung, Luftdichte.
+
+- Aufgabe: Erstelle eine strukturierte **Zusammenfassung** der Berechnung 
+  - beachte die Sprachstil-Richtlinien (siehe Anhang)
+  - Ausgabe: Markdown mit LaTeX-Mathematik
+  - Eingabe: []
+
+- **Rechnen**: erstelle eine Schritt-für-Schritt-Berechnung
+  - beachte die Sprachstil-Richtlinien (siehe Anhang)
+  - Ausgabe: Markdown mit LaTeX-Mathematik
+  - Eingabe: []
+
+- **Verstehen**: Erkläre genau
+
+
+- Erstelle eine Zusammenfassung aller **Formeln** für die Berechnung.
+- Erkläre die **Fachbegriffe und Symbole** (Griechische Buchstaben)
+- **Python-Script** zur Nachrechnung aller Werte (Kontrolle)
+
+- **Python-Skript** für die interaktive Visualisierung
+  - Fokussierte Darstellung, das sich auf die Kernaspekte konzentriert
+  - Interaktivität: Slider für stufenlose Anpassung und Echtzeitanzeige
+  - Kernfrage: 
+
+- Prüfe **Python-Skript**
+  - Code-Qualität
+  - Benutzerfreundlichkeit
+  - Code Refactoring
+  - Berechnungsgenauigkeit
+  - Dokumentation
+  - Plausibilität
+  - Script: [siehe Anhang]
+
+- Aufgabe 1: Erstelle eine **ABC-Liste** nach Birkenbihl
+  - in Tabellenform
+- Aufgabe 2: Erstelle eine **KAWA** (Kreative Wortassoziation) nach Birkenbihl
+  - in strukturierter Listenform
+- Aufgabe 3: Erstelle eine **Mindmap**
+  - in strukturierter Listenform
+- Aufgabe 4: **Kategorische Wissensanalyse**
+  - beachte die Richtlinien (siehe Anhang)
+  - Die verschiedenen Analysemethoden sollen sich ergänzen und unterschiedliche Perspektiven auf das Thema bieten.
+  - Ausgabe: Markdown mit LaTeX-Mathematik
+  - Eingabe: []
+
+- Erstelle eine **Checkliste** zur Strukturierung der Kapitel
+  - Buch-Inhaltsverzeichnis: []
+
+- korrekt **Zitieren**: IEEE-Stil (Zitierstil für Ingenieurwissenschaft)
+  - Im Text: [1]
+  - Literaturverzeichnis:
+
+## Buch Tipler-Physik bearbeiten
+
+Quelle: P. A. Tipler und G. Mosca, *Tipler Physik für Studierende der Naturwissenschaften und Technik*, 9., vollständig überarbeitete und ergänzte Auflage, P. Kersten, Hrsg. Heidelberg, Deutschland: Springer Spektrum, 2024. Verfügbar: https://doi.org/10.1007/978-3-662-67936-4
+
+K. Langeheinecke, A. Kaufmann, K. Langeheinecke und G. Thieleke, *Thermodynamik für Ingenieure*, 11. Auflage. Wiesbaden, Deutschland: Springer Vieweg, 2020. Verfügbar: https://doi.org/10.1007/978-3-658-30644-1
 
 - Kapitel extraieren: Teil I Physikalische Größen und Messungen
 
@@ -190,7 +242,7 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
 - Beispiele mit schrittweisen Rechenbeispielen im Markdown-Format mit LaTeX-Mathematik
 
 
-#### Thema: Physik -  Physikalische Größen und Messungen
+### Thema: Physik -  Physikalische Größen und Messungen
 
 - Aufgabe: Kernpunkte zusammenfassen und das Konzept etwas vertiefen
   - Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
@@ -202,7 +254,9 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
 - Lösung: [ ]
 
 
-#### Thema: Mathe - Vektorrechnung - Koordinatendarstellung
+## Buch Rießinger-Mathe - Vektorrechnung
+
+Quelle: T. Rießinger, *Mathematik für Ingenieure: Eine anschauliche Einführung für das praxisorientierte Studium*, 9. Auflage. Berlin, Heidelberg: Springer Vieweg, 2013. Verfügbar: https://doi.org/10.1007/978-3-642-36859-2
 
 - Aufgabe: Kernpunkte zusammenfassen und das Konzept etwas vertiefen
   - Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
@@ -221,7 +275,7 @@ Quelle: Tipler/Mosca Physik. 9. Aufl., 2023
   - B5-Querformat: Größe von 250 x 176 mm
 
 
-### Sprachstil: klar, präzise und sachlich
+## Sprachstil: klar, präzise und sachlich
 
 Lesestufe: Bachelor-Niveau. Sprache: Deutsch, beachte Sprachstil-Richtlinien
 
@@ -301,118 +355,124 @@ Für Indizes und Hochstellungen wird `_{}` bzw. `^{}` verwendet.
 **Beispiel:**
 $$A_\text{max} \quad F_\text{Zug}$$
 
-## Sprachliche Mittel und Stilistik
 
-### 1. **Sprachstil**
+# Sprachliche Mittel und Stilistik
 
-Der Sprachstil bezeichnet die individuelle Art und Weise, wie Sprache verwendet wird, um bestimmte Effekte oder Stimmungen zu erzeugen. Er umfasst Wortwahl, Satzbau, Tonfall und rhetorische Mittel und wird oft an das Publikum oder den Kontext angepasst.
+## 1. Grundlagen des Sprachstils
 
-**Beispiele:**
+Der Sprachstil charakterisiert die systematische Verwendung sprachlicher Mittel zur Erzeugung bestimmter kommunikativer Effekte. Er umfasst mehrere Kernelemente:
 
-- Ein **formeller Sprachstil** wird in wissenschaftlichen Arbeiten verwendet, um Sachlichkeit und Professionalität zu vermitteln.
-- Ein **umgangssprachlicher Sprachstil** findet sich in Blogs oder persönlichen Essays, um Nähe zum Leser herzustellen.
-- **Ironischer Sprachstil** wird eingesetzt, um Kritik zu üben, ohne direkt anzugreifen.
+- Präzise Wortwahl
+- Strukturierter Satzbau
+- Angemessener Tonfall
+- Gezielte rhetorische Mittel
 
-### 2. **Metaphern**
+### Anwendungsbeispiele im wissenschaftlichen Kontext:
 
-Eine Metapher ist ein sprachliches Stilmittel, bei dem ein Wort oder Ausdruck in übertragener Bedeutung verwendet wird, um eine bildhafte Vorstellung zu erzeugen.
+1. **Formeller Stil**:
+   - Sachliche Darstellung in wissenschaftlichen Publikationen
+   - Verwendung standardisierter Fachterminologie
+   - Präzise Formulierung von Hypothesen
 
-**Beispiele:**
+2. **Fachsprachlicher Stil**:
+   - Integration mathematischer Ausdrücke (z.B. $p \leq 0{,}05$)
+   - Verwendung definierter Variablen ($v = 15{,}7~\text{m}/\text{s}$)
+   - Einheitliche Notation bei Messwerten
 
-- "Das **Feuer der Leidenschaft** brannte in ihren Augen" beschreibt intensive Emotionen.
-- "Er ist der **Fels in der Brandung**" bedeutet, dass jemand zuverlässig und standhaft ist.
-- "Die Nachricht schlug ein wie ein **Blitz aus heiterem Himmel**" steht für eine unerwartete Neuigkeit.
+## 2. Metaphorische Ausdrucksformen
 
-### 3. **Redewendungen**
+Metaphern dienen der bildhaften Übertragung von Bedeutungen zur Veranschaulichung komplexer Sachverhalte.
 
-Redewendungen sind feststehende Ausdrücke, deren Bedeutung nicht direkt aus den einzelnen Wörtern erschlossen werden kann. Sie sind kulturell geprägt und oft metaphorisch.
+### Systematische Kategorisierung:
 
-**Beispiele:**
+1. **Strukturmetaphern**:
+   - Konzeptuelle Übertragungen
+   - Systematische Bedeutungsverschiebungen
+   - Kulturelle Verankerungen
 
-- "**Jemandem den Rücken stärken**" bedeutet, jemanden zu unterstützen.
-- "**Auf dem Holzweg sein**" heißt, sich irren oder falsch liegen.
-- "**Die Spreu vom Weizen trennen**" bedeutet, Wichtiges von Unwichtigem zu unterscheiden.
+2. **Orientierungsmetaphern**:
+   - Räumliche Zuordnungen
+   - Hierarchische Strukturierungen
+   - Temporale Orientierungen
 
-### 4. **Analogien**
+## 3. Analytische Werkzeuge
 
-Eine Analogie ist ein Vergleich zwischen zwei unterschiedlichen Dingen oder Konzepten, die in bestimmten Aspekten ähnlich sind, um komplexe Ideen verständlicher zu machen.
+### Textanalytische Methoden:
 
-**Beispiele:**
+1. **Quantitative Analyse**:
+   - Erfassung sprachlicher Merkmale
+   - Statistische Auswertungen ($n = 100$)
+   - Frequenzanalysen
 
-- "Das Lesen eines Buches ist wie eine **Reise in eine andere Welt**" verdeutlicht die immersive Erfahrung des Lesens.
-- "Das Gehirn funktioniert wie ein **Computer**, der Informationen verarbeitet und speichert."
-- "Ein Unternehmen zu führen ist wie ein **Orchester zu dirigieren**, bei dem alle Teile harmonisch zusammenarbeiten müssen."
+2. **Qualitative Analyse**:
+   - Interpretative Verfahren
+   - Kontextuelle Einbettung
+   - Bedeutungserschließung
 
----
+### Kritische Reflexionsmethoden:
 
-## Analyse und Reflexion
+1. **Systematische Evaluation**:
+   - Prüfung der Argumentationsstruktur
+   - Bewertung der Evidenzbasis
+   - Analyse der Schlussfolgerungen
 
-### 5. **Textanalyse**
+2. **Methodische Reflexion**:
+   - Überprüfung der Validität ($\alpha = 0{,}95$)
+   - Reliabilitätsanalyse
+   - Objektivitätskriterien
 
-Die Textanalyse ist die systematische Untersuchung eines Textes, um dessen Bedeutung, Struktur und Wirkung zu verstehen. Dabei werden verschiedene Aspekte wie Inhalt, Sprache und Stilmittel betrachtet.
+## 4. Kommunikative Strategien
 
-**Beispiele:**
+### Feedback-Strukturen:
 
-- **Inhaltsanalyse**: Untersuchung der zentralen Themen und Aussagen eines Textes.
-- **Sprachanalyse**: Betrachtung der Wortwahl und Satzstruktur, um den Ton des Textes zu bestimmen.
-- **Stilmittelanalyse**: Identifikation von Metaphern, Symbolen und anderen rhetorischen Mitteln.
+1. **Formatives Feedback**:
+   - Prozessbegleitende Rückmeldungen
+   - Entwicklungsorientierte Hinweise
+   - Konstruktive Verbesserungsvorschläge
 
-### 6. **Kritische Reflexion**
+2. **Summatives Feedback**:
+   - Abschließende Bewertungen
+   - Quantifizierte Evaluationen
+   - Qualitative Gesamteinschätzungen
 
-Kritische Reflexion ist der Prozess des tiefgehenden Nachdenkens über ein Thema oder eine Erfahrung, bei dem Annahmen hinterfragt und alternative Perspektiven berücksichtigt werden.
+## 5. Qualitätssicherung
 
-**Beispiele:**
+### Systematische Überprüfung:
 
-- **Selbstreflexion**: Evaluierung der eigenen Lernprozesse und Erkenntnisse.
-- **Reflexion über gesellschaftliche Themen**: Hinterfragen von Normen und Werten in der Gesellschaft.
-- **Kritische Betrachtung wissenschaftlicher Theorien**: Analysieren der Stärken und Schwächen bestehender Modelle.
+1. **Formale Kriterien**:
+   - Korrekte Zeichensetzung
+   - Einheitliche Formatierung
+   - Konsistente Strukturierung
 
-### 7. **Kritik**
+2. **Inhaltliche Kriterien**:
+   - Logische Kohärenz
+   - Argumentative Stringenz
+   - Empirische Fundierung
 
-Kritik ist die Beurteilung von Ideen, Werken oder Handlungen, die positive und negative Aspekte hervorheben kann. Sie dient der Verbesserung und Weiterentwicklung.
+### Dokumentation:
 
-**Beispiele:**
+- Versionskontrolle mit Datumsangaben
+- Änderungsprotokollierung
+- Systematische Archivierung
 
-- **Literaturkritik**: Bewertung eines Buches hinsichtlich Stil, Inhalt und Originalität.
-- **Konstruktives Feedback**: Geben von Verbesserungsvorschlägen in einer Peer-Review.
-- **Kunstkritik**: Analyse eines Kunstwerks unter ästhetischen und technischen Gesichtspunkten.
+## Anhang: Mathematische Notationen
 
----
+Beispiele für korrekte mathematische Notation:
 
-## Kreativität und Argumentation
+1. **Messgrößen**: $l = 12{,}5~\text{m}$
+2. **Temperaturen**: $$T = 23{,}4~^\circ\text{C}$
+3. **Kräfte**: $F = 100~\text{N}$
+4. **Geschwindigkeiten**: $v = 50~\text{km}/\text{h}$
 
-### 8. **Brainstorming**
+# Tipps für effizientes Lesen
 
-Brainstorming ist eine Kreativitätstechnik zur schnellen Sammlung von Ideen oder Lösungen zu einem Thema, ohne sofortige Bewertung oder Kritik.
+1. **Höhere Lesegeschwindigkeit**:
+   - **Schneller lesen** hilft, das Gehirn aktiv zu halten, wodurch es weniger abgelenkt ist.
+   - Selbst langweilige Texte wirken interessanter, da das Gehirn stärker gefordert wird.
+2. **Vermeidung von Lesefehlern**:
+   - **Inneres Mitsprechen minimieren**: Nur noch wichtige Wörter innerlich mitsprechen.
+   - **Zurückspringen vermeiden**: Nicht immer zurückspringen, sondern sich auf das Verständnis beim ersten Lesen konzentrieren.
+   - **Wortgruppen lesen**: Statt Wort für Wort, mehrere Wörter als sinnvolle Einheiten erfassen.
+   - **Breiteren Blickfokus nutzen**: Erwachsene können durch den größeren Wortschatz und breiteren Blickfokus ganze Wortgruppen schneller erkennen.
 
-**Beispiele:**
 
-- **Ideenfindung für ein Forschungsprojekt**: Sammeln von möglichen Fragestellungen oder Hypothesen.
-- **Entwicklung von Marketingstrategien**: Kreative Ansätze für Kampagnen erarbeiten.
-- **Problemlösung in Gruppenarbeit**: Zusammenstellen verschiedener Lösungswege für ein technisches Problem.
-
-### 9. **Gegenargumente**
-
-Gegenargumente sind Argumente, die einer bestimmten These widersprechen, um eine Diskussion ausgewogener zu gestalten und verschiedene Sichtweisen einzubeziehen.
-
-**Beispiele:**
-
-- **Debatte über erneuerbare Energien**: Nennen der Kosten und infrastrukturellen Herausforderungen.
-- **Diskussion über Datenschutz**: Hinweis auf Sicherheitsrisiken durch Datenverschlüsselung.
-- **Erörterung von Online-Lernen**: Anführen von Nachteilen wie fehlender sozialer Interaktion.
-
-### 10. **Redaktionelles Feedback**
-
-Redaktionelles Feedback ist die Rückmeldung an einen Autor, um die Qualität eines Textes zu verbessern. Es umfasst Korrekturen und Vorschläge zu Inhalt, Stil und Struktur.
-
-**Beispiele:**
-
-- **Sprachliche Korrekturen**: Behebung von Rechtschreib- und Grammatikfehlern.
-- **Stilistische Hinweise**: Empfehlungen zur Verbesserung des Leseflusses oder zur Vermeidung von Wiederholungen.
-- **Inhaltliche Anmerkungen**: Aufzeigen von Unklarheiten oder Widersprüchen im Text.
-
----
-
-## Fazit
-
-Das Verständnis und die Anwendung dieser Begriffe sind essenziell für die erfolgreiche Analyse und Erstellung von Texten im akademischen Kontext. Sie ermöglichen es Studierenden, komplexe Inhalte zu erschließen, kritisch zu hinterfragen und eigene Ideen kreativ und fundiert zu entwickeln.
