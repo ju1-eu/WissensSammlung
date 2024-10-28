@@ -17,7 +17,6 @@ Letzte Aktualisierung: 2024-10-26
       - [Fachbuch bearbeiten](#fachbuch-bearbeiten)
   - [Buch Basiswissen Verbrennungsmotor bearbeiten](#buch-basiswissen-verbrennungsmotor-bearbeiten)
   - [Buch Tipler-Physik bearbeiten](#buch-tipler-physik-bearbeiten)
-    - [Thema: Physik -  Physikalische Größen und Messungen](#thema-physik----physikalische-größen-und-messungen)
   - [Buch Rießinger-Mathe - Vektorrechnung](#buch-rießinger-mathe---vektorrechnung)
   - [Sprachstil: klar, präzise und sachlich](#sprachstil-klar-präzise-und-sachlich)
 - [Sprachliche Mittel und Stilistik](#sprachliche-mittel-und-stilistik)
@@ -119,36 +118,44 @@ Letzte Aktualisierung: 2024-10-26
 - **Thema/Kernfrage**: Wie groß ist der Benzinverbrauch in l/(100 km) bei 180 km/h?
 - **Lernziele**: Luftwiderstandskraft, Rollwiderstandskraft, mechanischer Wirkungsgrad des Antriebsstrangs, thermische Zustandsgleichung, Luftdichte.
 
-- Aufgabe: Erstelle eine strukturierte **Zusammenfassung** der Berechnung 
-  - beachte die Sprachstil-Richtlinien (siehe Anhang)
-  - Ausgabe: Markdown mit LaTeX-Mathematik
-  - Eingabe: []
+Aufgabe: Erstelle eine strukturierte **Zusammenfassung** der Berechnung 
 
-- **Rechnen**: erstelle eine Schritt-für-Schritt-Berechnung
-  - beachte die Sprachstil-Richtlinien (siehe Anhang)
-  - Ausgabe: Markdown mit LaTeX-Mathematik
-  - Eingabe: []
+- beachte die Sprachstil-Richtlinien (siehe Anhang)
+- Ausgabe: Markdown mit LaTeX-Mathematik
+- Eingabe: []
 
-- **Verstehen**: Erkläre genau
+**Rechnen**: erstelle eine Schritt-für-Schritt-Berechnung
+
+- beachte die Sprachstil-Richtlinien (siehe Anhang)
+- Ausgabe: Markdown mit LaTeX-Mathematik
+- Eingabe: []
+
+**Verstehen**: Erkläre genau
 
 
-- Erstelle eine Zusammenfassung aller **Formeln** für die Berechnung.
+Erstelle eine Zusammenfassung aller **Formeln** für die Berechnung.
+
 - Erkläre die **Fachbegriffe und Symbole** (Griechische Buchstaben)
 - **Python-Script** zur Nachrechnung aller Werte (Kontrolle)
 
-- **Python-Skript** für die interaktive Visualisierung
-  - Fokussierte Darstellung, das sich auf die Kernaspekte konzentriert
-  - Interaktivität: Slider für stufenlose Anpassung und Echtzeitanzeige
-  - Kernfrage: 
+**Python-Skript** für die interaktive Visualisierung
 
-- Prüfe **Python-Skript**
-  - Code-Qualität
-  - Benutzerfreundlichkeit
-  - Code Refactoring
-  - Berechnungsgenauigkeit
-  - Dokumentation
-  - Plausibilität
-  - Script: [siehe Anhang]
+- Fokussierte Darstellung, das sich auf die Kernaspekte konzentriert
+- Interaktivität: Slider für stufenlose Anpassung und Echtzeitanzeige
+- Automatisches Speichern: output-Verzeichnis als PNG und SVG
+- Kernfrage: 
+
+Prüfe **Python-Skript**
+
+- Code-Qualität
+- Benutzerfreundlichkeit
+- Code Refactoring
+- Berechnungsgenauigkeit
+- Dokumentation
+- Plausibilität
+- Script: [siehe Anhang]
+
+**Textanalyse**
 
 - Aufgabe 1: Erstelle eine **ABC-Liste** nach Birkenbihl
   - in Tabellenform
@@ -162,117 +169,98 @@ Letzte Aktualisierung: 2024-10-26
   - Ausgabe: Markdown mit LaTeX-Mathematik
   - Eingabe: []
 
-- Erstelle eine **Checkliste** zur Strukturierung der Kapitel
-  - Buch-Inhaltsverzeichnis: []
+Erstelle eine **Checkliste** zur Strukturierung der Kapitel
 
-- korrekt **Zitieren**: IEEE-Stil (Zitierstil für Ingenieurwissenschaft)
-  - Im Text: [1]
-  - Literaturverzeichnis:
+- Buch-Inhaltsverzeichnis: []
+
+korrekt **Zitieren**: IEEE-Stil (Zitierstil für Ingenieurwissenschaft)
+
+- Im Text: [1]
+- Literaturverzeichnis:
 
 ## Buch Tipler-Physik bearbeiten
 
-Quelle: P. A. Tipler und G. Mosca, *Tipler Physik für Studierende der Naturwissenschaften und Technik*, 9., vollständig überarbeitete und ergänzte Auflage, P. Kersten, Hrsg. Heidelberg, Deutschland: Springer Spektrum, 2024. Verfügbar: https://doi.org/10.1007/978-3-662-67936-4
+**Quelle 1**: P. A. Tipler und G. Mosca, *Tipler Physik für Studierende der Naturwissenschaften und Technik*, 9., vollständig überarbeitete und ergänzte Auflage, P. Kersten, Hrsg. Heidelberg, Deutschland: Springer Spektrum, 2024. Verfügbar: https://doi.org/10.1007/978-3-662-67936-4
 
-K. Langeheinecke, A. Kaufmann, K. Langeheinecke und G. Thieleke, *Thermodynamik für Ingenieure*, 11. Auflage. Wiesbaden, Deutschland: Springer Vieweg, 2020. Verfügbar: https://doi.org/10.1007/978-3-658-30644-1
+**Quelle 2**: K. Langeheinecke, A. Kaufmann, K. Langeheinecke und G. Thieleke, *Thermodynamik für Ingenieure*, 11. Auflage. Wiesbaden, Deutschland: Springer Vieweg, 2020. Verfügbar: https://doi.org/10.1007/978-3-658-30644-1
 
-- Kapitel extraieren: Teil I Physikalische Größen und Messungen
+- Physik / Kapitel: Mechanik von Massenpunkten
+- **Thema**: Verschiebung
+- **Lernziel**: [In diesem Kapitel wollen wir uns mit der Kinematik
+einfacher Bewegungen beschäftigen. In diesem Zusammenhang
+werden wir die exakten Definitionen von Begriffen
+wie Verschiebung, Geschwindigkeit, Geschwindigkeitsbetrag
+und Beschleunigung einführen, die umgangssprachlich
+zur Beschreibung von Bewegungen herangezogen
+werden. Insbesondere werden wir den wichtigen
+Spezialfall der gleichförmig beschleunigten Bewegung
+betrachten und als Anwendungen den schrägen Wurf und
+die Kreisbewegung näher untersuchen.]
 
-  ```bash
-  python3 -m venv venv        
-  source venv/bin/activate
-  pip install pypdf2
-  pip install numpy pandas matplotlib openpyxl
-  python pdf_extractor.py
+**Zusammenfassung**: Erstelle eine strukturierte Zusammenfassung
 
+- Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
+- Eingabe: [beachte den Anhang]
 
-  python klausur_auswertung.py           
-  python si_einheiten_umrechnung.py
-  python reifenabrieb_berechnung.py      
-  python schwingungsdauer_analyse.py     
-  schwingungsdauer_messungen.xlsx 
-  ```
+**Verstehen**: Erkläre genau die **Fachbegriffe und Symbole** (Griechische Buchstaben) und Konzepte
 
-- Thema "Physikalische Größen und Messungen"
-- ich gebe dir gleich eine PDF
-- **Lesestufe**: Bachelor-Niveau
-- beachte die Sprachstil-Richtlinien
-  - Ausgabe: Markdown mit LaTeX-Mathematik
+**Rechnen**: Erstelle strukturierte und detaillierte Lösungen zu den Physikaufgaben mit schrittweisen Erläuterungen.
 
-- Inhaltsverzeichnis, Lernziel, Tipp, beachte Kapitel_1_PhysikalischeGroessen.pdf
-  - Ausgabe: Markdown mit LaTeX-Mathematik
+- Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
+- Fragen: [Thema Aufgabe ]
+- Lösung: [beachte den Anhang]
 
-   ```plaintext
-   Physikalische Größen und Messungen
+**Softwareentwicklung**
 
-   Inhaltsverzeichnis
+- Aufgabe: Beginne mit Phase 1, beachte Softwareentwicklung-Richtlinien
+- Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
+- Eingabe: []
+  - **Phase 1**: Fragen – Rechnen – Verstehen
+  - **Phase 2**: Algorithmus – Struktogramm – Implementieren
+    - NASSI-SHNEIDERMAN MERMAID TEMPLATE
+  - **Phase 3**: Prüfe Python-Skript
 
-   Vom Wesen der Physik
-   Maßeinheiten
-   Dimensionen physikalischer Größen
-   Signifikante Stellen und Größenordnungen
-   Messgenauigkeit und Messfehler
-   ```
+Erkläre **Tabellen und Diagramme**
 
-- Nenne Beispiele, Vorgehensweise, Übungen mit schrittweise Lösung pro Kapitel, beachte Kapitel_1_PhysikalischeGroessen.pdf
-  - Ausgabe: Markdown mit LaTeX-Mathematik
+- Ausgabe: Markdown mit LaTeX-Mathematik
 
-- Erkläre Tabellen und Diagramme pro Kapitel, beachte Kapitel_1_PhysikalischeGroessen.pdf
-  - Ausgabe: Markdown mit LaTeX-Mathematik
+**Python-Script**: Portiere MATLAB-berechnung nach Python
 
-- portiere je MATLAB-berechnung pro Kapitel nach Python, beachte Kapitel_1_PhysikalischeGroessen.pdf
-  - erstelle passende Dateinamen
-  - deutsche Kommentare
+- erstelle sinnvollen Dateinamen
+- deutsche Kommentare
 
-- Erstelle Zusammenfassung, beachte Zusammenfassung in Kapitel_1_PhysikalischeGroessen.pdf
-  - Ausgabe: Markdown mit LaTeX-Mathematik
+**PDF-Kapitel** extraieren:
 
-- **Kernpunkte zusammenfassen** und das Konzept etwas vertiefen
-  - Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
+```bash
+python3 -m venv venv        
+source venv/bin/activate
+pip install pypdf2
+python pdf_extractor.py
+```
 
-- Erstelle eine schrittweise Berechnung der Aufgaben, beachte Aufgaben in Kapitel_1_PhysikalischeGroessen.pdf
-  - Ausgabe: Markdown mit LaTeX-Mathematik
-
-- Erkläre mir die wichtigsten Fachwörter im Kontext
-
-- Erstelle mir Notizen und eine Zusammenfassung, beachte Kapitel_1_PhysikalischeGroessen.pdf und die Sprachstil-Richtlinien und Lernziele
-  - Ausgabe: Markdown mit LaTeX-Mathematik
-
-- Visualisiere die Zusammenhänge
-
-- Beispiele mit schrittweisen Rechenbeispielen im Markdown-Format mit LaTeX-Mathematik
-
-
-### Thema: Physik -  Physikalische Größen und Messungen
-
-- Aufgabe: Kernpunkte zusammenfassen und das Konzept etwas vertiefen
-  - Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
-
-- Aufgabe: 
-
-- Eingabe: [ ]
-
-- Lösung: [ ]
-
+- Ich gebe dir gleich eine PDF, verstehe den Sinn und merke es dir. Hast du das Verstanden?
 
 ## Buch Rießinger-Mathe - Vektorrechnung
 
 Quelle: T. Rießinger, *Mathematik für Ingenieure: Eine anschauliche Einführung für das praxisorientierte Studium*, 9. Auflage. Berlin, Heidelberg: Springer Vieweg, 2013. Verfügbar: https://doi.org/10.1007/978-3-642-36859-2
 
-- Aufgabe: Kernpunkte zusammenfassen und das Konzept etwas vertiefen
-  - Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
+Aufgabe: Kernpunkte zusammenfassen und das Konzept etwas vertiefen
 
-- Aufgabe: fasse alle Definitionen und Sätze zusammen
+- Ausgabe: Markdown mit LaTeX-Mathematik, beachte Sprachstil-Richtlinien
 
-- Aufgabe: Berechne schritt-für-schritt die Lösung. Fange mit Beispiel 1 an.
+Aufgabe: fasse alle Definitionen und Sätze zusammen
 
-- Visualisieren mit Python
-  - Skript soll genau die Berechnungen durchführen, die in der Aufgabenstellung beschrieben sind
-  - interaktiv, speichern in PNG und SVG
-  - Maßstab des Plots anpassen
-  - Vektorendarstellung, Koordinatenursprung (0,0,0), Pfeile und Längen
-  - rechtshändiges Koordinatensystem
-  - sinnvoller Name für das Python-Skript
-  - B5-Querformat: Größe von 250 x 176 mm
+Aufgabe: Berechne schritt-für-schritt die Lösung. Fange mit Beispiel 1 an.
+
+**Visualisieren mit Python**
+
+- Skript soll genau die Berechnungen durchführen, die in der Aufgabenstellung beschrieben sind
+- interaktiv, speichern in PNG und SVG
+- Maßstab des Plots anpassen
+- Vektorendarstellung, Koordinatenursprung (0,0,0), Pfeile und Längen
+- rechtshändiges Koordinatensystem
+- sinnvoller Name für das Python-Skript
+- B5-Querformat: Größe von 250 x 176 mm
 
 
 ## Sprachstil: klar, präzise und sachlich
