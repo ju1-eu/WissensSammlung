@@ -6,11 +6,11 @@ date: "2024-09-29"
 
 # To-Do-Liste
 
-bearbeitet am 29. September 2024
+Letzte Aktualisierung: 2024-11-02
 
 - [To-Do-Liste](#to-do-liste)
   - [Inhalt](#inhalt)
 
 ## Inhalt
 
-- [x] test
+- [x] Checkpunkt

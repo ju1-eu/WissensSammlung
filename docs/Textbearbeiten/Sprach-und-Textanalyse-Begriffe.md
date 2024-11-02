@@ -6,7 +6,7 @@ date: "2024-10-13"
 
 # Begriffe der Sprach- und Textanalyse
 
-Letzte Aktualisierung: 2024-10-26
+Letzte Aktualisierung: 2024-11-02
 
 ## Inhaltsverzeichnis
 
@@ -142,7 +142,7 @@ Erstelle eine Zusammenfassung aller **Formeln** für die Berechnung.
 
 - Fokussierte Darstellung, das sich auf die Kernaspekte konzentriert
 - Interaktivität: Slider für stufenlose Anpassung und Echtzeitanzeige
-- Automatisches Speichern: output-Verzeichnis als PNG und SVG
+- Automatisches Speichern: output-Verzeichnis als PNG und SVG und PDF (Vektor)
 - Kernfrage: 
 
 Prüfe **Python-Skript**

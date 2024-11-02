@@ -6,6 +6,8 @@ date: "2024-10-26"
 
 ## Memoflip-Methode: Effektive Projektplanung und -umsetzung
 
+Letzte Aktualisierung: 2024-11-02
+
 Die Memoflip-Methode ist ein strukturiertes Vorgehensmodell zur effizienten Planung und Durchführung von Projekten. Sie unterstützt Studierende und Fachkräfte dabei, ihre Arbeitsprozesse zu optimieren und Ziele effektiv zu erreichen.
 
 ---

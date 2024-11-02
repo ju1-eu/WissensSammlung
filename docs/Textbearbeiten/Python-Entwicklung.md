@@ -4,6 +4,8 @@ title: Python-Entwicklung
 
 # Python installieren
 
+Letzte Aktualisierung: 2024-11-02
+
 ```bash
 brew update
 brew install python

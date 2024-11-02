@@ -10,6 +10,3 @@ print("pygame-Version:", pygame.ver)
 root = tkinter.Tk()
 root.title("Testfenster")
 root.mainloop()
-
-
-

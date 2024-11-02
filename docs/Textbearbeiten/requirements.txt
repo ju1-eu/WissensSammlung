@@ -6,9 +6,7 @@
 #
 appdirs==1.4.4
     # via pint
-asttokens==2.4.1
-    # via stack-data
-black[jupyter]==24.10.0
+black==24.10.0
     # via -r requirements.in
 click==8.1.7
     # via black
@@ -16,12 +14,8 @@ contourpy==1.3.0
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
-decorator==5.1.1
-    # via ipython
 et-xmlfile==2.0.0
     # via openpyxl
-executing==2.1.0
-    # via stack-data
 flake8==7.1.1
     # via -r requirements.in
 flexcache==0.3
@@ -32,10 +26,6 @@ fonttools==4.54.1
     # via matplotlib
 iniconfig==2.0.0
     # via pytest
-ipython==8.29.0
-    # via black
-jedi==0.19.1
-    # via ipython
 joblib==1.4.2
     # via scikit-learn
 kiwisolver==1.4.7
@@ -45,8 +35,6 @@ matplotlib==3.9.2
     #   -r requirements.in
     #   seaborn
     #   types-seaborn
-matplotlib-inline==0.1.7
-    # via ipython
 mccabe==0.7.0
     # via flake8
 mpmath==1.3.0
@@ -81,12 +69,8 @@ pandas==2.2.3
     #   seaborn
 pandas-stubs==2.2.3.241009
     # via types-seaborn
-parso==0.8.4
-    # via jedi
 pathspec==0.12.1
     # via black
-pexpect==4.9.0
-    # via ipython
 pillow==11.0.0
     # via
     #   -r requirements.in
@@ -97,18 +81,10 @@ platformdirs==4.3.6
     # via black
 pluggy==1.5.0
     # via pytest
-prompt-toolkit==3.0.48
-    # via ipython
-ptyprocess==0.7.0
-    # via pexpect
-pure-eval==0.2.3
-    # via stack-data
 pycodestyle==2.12.1
     # via flake8
 pyflakes==3.2.0
     # via flake8
-pygments==2.18.0
-    # via ipython
 pyparsing==3.2.0
     # via matplotlib
 pypdf2==3.0.1
@@ -130,21 +106,11 @@ scipy==1.14.1
 seaborn==0.13.2
     # via -r requirements.in
 six==1.16.0
-    # via
-    #   asttokens
-    #   python-dateutil
-stack-data==0.6.3
-    # via ipython
+    # via python-dateutil
 sympy==1.13.3
     # via -r requirements.in
 threadpoolctl==3.5.0
     # via scikit-learn
-tokenize-rt==6.1.0
-    # via black
-traitlets==5.14.3
-    # via
-    #   ipython
-    #   matplotlib-inline
 types-pytz==2024.2.0.20241003
     # via pandas-stubs
 types-seaborn==0.13.2.20240813
@@ -157,5 +123,3 @@ typing-extensions==4.12.2
     #   pint
 tzdata==2024.2
     # via pandas
-wcwidth==0.2.13
-    # via prompt-toolkit

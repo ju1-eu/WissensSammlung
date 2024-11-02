@@ -4,6 +4,8 @@ title: Softwareentwicklung-Richtlinien
 
 # Systematischer Ansatz zur Softwareentwicklung - Richtlinien
 
+Letzte Aktualisierung: 2024-11-02
+
 Diese drei Phasen bilden zusammen einen systematischen Ansatz zur Softwareentwicklung, bei dem zuerst das Problem vollständig verstanden und dann schrittweise in eine technische Lösung überführt wird.
 
 - [Systematischer Ansatz zur Softwareentwicklung - Richtlinien](#systematischer-ansatz-zur-softwareentwicklung---richtlinien)

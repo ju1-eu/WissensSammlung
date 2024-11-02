@@ -58,6 +58,24 @@ $(DOCS_DIR)/start.md:
 		echo "- [$$title]($$file_name.html)" >> $(INDEX_MD); \
 	done
 	@echo "" >> $(INDEX_MD)
+	@echo "## Notizen" >> $(INDEX_MD)
+	@echo "" >> $(INDEX_MD)
+	@find $(DOCS_DIR)/Notizen -type f -name "*.html" | sort | while read file; do \
+		rel_path=$$(echo $$file | sed 's|$(DOCS_DIR)/||'); \
+		file_name=$$(basename "$$file" .html); \
+		title=$$(echo $$file_name | sed 's/_/ /g'); \
+		echo "- [$$title]($$rel_path)" >> $(INDEX_MD); \
+	done
+	@echo "" >> $(INDEX_MD)
+	@echo "## Textbearbeiten" >> $(INDEX_MD)
+	@echo "" >> $(INDEX_MD)
+	@find $(DOCS_DIR)/Textbearbeiten -type f -name "*.html" | sort | while read file; do \
+		rel_path=$$(echo $$file | sed 's|$(DOCS_DIR)/||'); \
+		file_name=$$(basename "$$file" .html); \
+		title=$$(echo $$file_name | sed 's/_/ /g'); \
+		echo "- [$$title]($$rel_path)" >> $(INDEX_MD); \
+	done
+	@echo "" >> $(INDEX_MD)
 	@echo "## KI" >> $(INDEX_MD)
 	@echo "" >> $(INDEX_MD)
 	@find $(DOCS_DIR)/KI -type f -name "*.html" | sort | while read file; do \

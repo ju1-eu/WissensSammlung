@@ -4,6 +4,8 @@ title: Analysemethoden für die Textanalyse
 
 # Analysemethoden für die Textanalyse
 
+Letzte Aktualisierung: 2024-11-02
+
 - [Analysemethoden für die Textanalyse](#analysemethoden-für-die-textanalyse)
   - [Didaktische Reduktion](#didaktische-reduktion)
   - [Concept Mapping](#concept-mapping)

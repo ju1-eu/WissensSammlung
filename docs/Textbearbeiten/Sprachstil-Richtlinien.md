@@ -6,6 +6,8 @@ date: "2024-10-19"
 
 # Sprachstil: klar, präzise und sachlich
 
+Letzte Aktualisierung: 2024-11-02
+
 Lesestufe: Bachelor-Niveau. Sprache: Deutsch
 
 **Sprachstil-Richtlinien**:

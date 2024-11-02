@@ -236,7 +236,7 @@ Beiträge sind willkommen! Bitte beachten Sie folgende Best Practices:
 4. Pushen Sie den Branch (`git push origin feature/AmazingFeature`).
 5. Öffnen Sie einen Pull Request.
 
-Detaillierte Anweisungen finden Sie in der [CONTRIBUTING.md](docs/CONTRIBUTING.md).
+Detaillierte Anweisungen finden Sie in der [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Häufige Fehler und Lösungen
 
@@ -258,7 +258,7 @@ Detaillierte Anweisungen finden Sie in der [CONTRIBUTING.md](docs/CONTRIBUTING.m
 
 ## Lizenz
 
-Dieses Projekt unterliegt der [MIT License](docs/LICENSE). Die Nutzung, Veränderung und Verbreitung des Codes ist unter Nennung der ursprünglichen Urheber gestattet.
+Dieses Projekt unterliegt der [MIT License](LICENSE). Die Nutzung, Veränderung und Verbreitung des Codes ist unter Nennung der ursprünglichen Urheber gestattet.
 
 ## Kontakt
 
