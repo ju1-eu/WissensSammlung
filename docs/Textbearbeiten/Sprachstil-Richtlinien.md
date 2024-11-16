@@ -6,59 +6,99 @@ date: "2024-10-19"
 
 # Sprachstil: klar, präzise und sachlich
 
-Letzte Aktualisierung: 2024-11-02
+Letzte Aktualisierung: 2024-11-16
 
 Lesestufe: Bachelor-Niveau. Sprache: Deutsch
 
-**Sprachstil-Richtlinien**:
+Um einen klaren, präzisen und sachlichen Sprachstil auf Bachelor-Niveau zu entwickeln, sollten folgende Aspekte beachtet werden:
 
-1. **Klarheit und Präzision**:
-   - Verwenden Sie kurze und eindeutige Sätze.
-   - Formulieren Sie Ihre Gedanken direkt und vermeiden Sie unnötige Ausschmückungen.
+## Präzise Ausdrucksweise
 
-2. **Fachterminologie angemessen einsetzen**:
-   - Nutzen Sie relevante Fachbegriffe, um Genauigkeit zu gewährleisten.
-   - Erklären Sie komplexe Begriffe kurz, falls sie für das Verständnis essenziell sind.
+- Fachbegriffe korrekt und konsistent verwenden
+- Vage Formulierungen vermeiden, stattdessen konkrete Angaben machen
+- Aussagen mit Belegen und Quellenangaben untermauern
 
-3. **Objektivität**:
-   - Schreiben Sie in einem neutralen Ton und vermeiden Sie subjektive Meinungen.
-   - Vermeiden Sie emotionale oder wertende Ausdrücke.
+## Sachlicher Ton 
 
-4. **Struktur und Gliederung**:
-   - Organisieren Sie Ihre Notizen logisch mit Überschriften und Unterpunkten.
-   - Nutzen Sie Aufzählungen und Nummerierungen, um Informationen übersichtlich darzustellen.
+- Auf wertende Adjektive und Adverbien verzichten
+- Keine umgangssprachlichen Wendungen oder Metaphern verwenden
+- Persönliche Meinungen und Emotionen außen vor lassen
 
-5. **Konsistenter Stil**:
-   - Halten Sie sich an eine einheitliche Zeitform (meist Präsens) und Perspektive.
-   - Verwenden Sie durchgehend die gleiche Terminologie für zentrale Konzepte.
+## Klare Struktur
 
-6. **Vermeidung von Umgangssprache**:
-   - Vermeiden Sie umgangssprachliche Ausdrücke oder Abkürzungen.
-   - Setzen Sie stattdessen auf formelle und akademische Sprache.
+- Kurze, prägnante Sätze bilden
+- Komplexe Sachverhalte in mehrere Sätze aufteilen
+- Logischen Aufbau mit Überleitungen zwischen Absätzen schaffen
 
-7. **Aktive statt passive Formulierungen**:
-   - Bevorzugen Sie aktive Sätze, um Ihre Aussagen klarer zu gestalten.
-   - Beispiel: Statt "Es wurde festgestellt, dass..." schreiben Sie "Studien haben festgestellt, dass...".
+## Objektive Darstellung
 
-8. **Beispiele und Veranschaulichungen**:
-   - Nutzen Sie Beispiele, um komplexe Zusammenhänge zu verdeutlichen.
-   - Seien Sie jedoch sparsam mit Metaphern und Analogien, um die Sachlichkeit zu bewahren.
+- Passivkonstruktionen statt "ich"-Form verwenden
+- Verschiedene Perspektiven neutral darstellen
+- Argumente sachlich abwägen, ohne Partei zu ergreifen
 
-9. **Prägnanz**:
-   - Konzentrieren Sie sich auf die wesentlichen Informationen.
-   - Entfernen Sie redundante oder irrelevante Details.
+## Präzise Wortwahl
 
-10. **Überprüfung und Korrekturlesen**:
-    - Lesen Sie Ihre Notizen nach dem Schreiben noch einmal durch.
-    - Achten Sie auf Rechtschreibung, Grammatik und Verständlichkeit.
+- Synonyme sparsam und gezielt einsetzen
+- Füllwörter und Redundanzen vermeiden  
+- Fachspezifische Terminologie angemessen nutzen
+
+## Formale Aspekte
+
+- Einheitliche Zeitform (in der Regel Präsens) verwenden
+- Auf korrekte Rechtschreibung und Zeichensetzung achten
+- Abkürzungen beim ersten Gebrauch ausschreiben
+
+Die konsequente Anwendung dieser Prinzipien führt zu einem wissenschaftlichen Sprachstil, der sich durch Klarheit, Präzision und Sachlichkeit auszeichnet. Regelmäßiges Üben und Feedback von Dozierenden helfen dabei, diesen Stil zu verinnerlichen.
 
 
-11. mathematischen Notationskonventionen für die Verwendung von LaTeX-Mathematik in deutschsprachigen Markdown-Dokumenten.
-    - **Dezimaltrennzeichen:** Verwende das Komma `{,}` für Dezimalzahlen.
-    - **Einheiten:** Immer im Textmodus `\text{}` und durch ein geschütztes Leerzeichen `~` von der Zahl trennen.
-    - **Brüche und Formeln:** Brüche mit `\frac{}{}`, Einheiten in Textform.
-    - **Prozent:** Ohne Leerzeichen vor dem Prozentzeichen.
-    - **Winkel:** Mit `^\circ` für Grad.
-    - **Quadrat/Kubik-Einheiten:** Exponent nach der Einheit im Textmodus.
-    - **Indizes und Hochstellungen:** Mit `_{}` und `^{}`.
-    - **Vektoren** in fett `\mathbf{F}` und `\mathbf{a}`
+## mathematischen Notationskonventionen für die Verwendung von LaTeX-Mathematik in Markdown
+
+### Grundlegende Formatierung
+
+- Inline-Mathematik: Zwischen einfachen Dollarzeichen `$...$`
+- Abgesetzte Formeln: Zwischen doppelten Dollarzeichen `$$...$$`
+
+### Zahlen und Einheiten
+
+- Dezimaltrennzeichen: Komma in geschweiften Klammern `3{,}14`
+- Einheiten: Im Textmodus mit geschütztem Leerzeichen `5~\text{kg}`
+- Prozent: Ohne Leerzeichen `25\%`
+- Winkel: Mit `^\circ` für Grad `90^\circ`
+
+### Brüche und Formeln
+
+- Brüche: `\frac{Zähler}{Nenner}`
+- Wurzeln: `\sqrt{Ausdruck}` oder `\sqrt[n]{Ausdruck}` für n-te Wurzel
+
+### Indizes und Hochstellungen
+
+- Tiefgestellt: `x_1` oder `x_{12}` für mehrere Zeichen
+- Hochgestellt: `x^2` oder `x^{10}` für mehrere Zeichen
+
+### Vektoren und Matrizen
+
+- Vektoren: In Fettschrift `\mathbf{v}`
+- Matrizen: In `\begin{matrix}...\end{matrix}` Umgebung
+
+### Griechische Buchstaben und Symbole
+
+- Kleinbuchstaben: `\alpha`, `\beta`, `\gamma`, etc.
+- Großbuchstaben: `\Alpha`, `\Beta`, `\Gamma`, etc.
+
+### Operatoren und Relationen
+
+- Summe: `\sum_{i=1}^n`
+- Integral: `\int_{a}^b`
+- Unendlich: `\infty`
+- Kleiner gleich: `\leq`
+- Größer gleich: `\geq`
+
+### Klammern
+
+- Runde Klammern: `(...)` oder `\left(...\right)` für automatische Größenanpassung
+- Eckige Klammern: `[...]` oder `\left[...\right]`
+- Geschweifte Klammern: `\{...\}` oder `\left\{...\right\}`
+
+### Textformatierung in Formeln
+
+- Normaler Text: `\text{Text in Formel}`

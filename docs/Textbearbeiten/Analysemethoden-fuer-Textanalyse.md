@@ -1,128 +1,53 @@
 ---
-title: Analysemethoden für die Textanalyse
+title: "Analysemethoden-fuer-Textanalyse"
+author: "Jan Unger"
+date: "2024-11-16"
 ---
 
 # Analysemethoden für die Textanalyse
 
 Letzte Aktualisierung: 2024-11-02
 
-- [Analysemethoden für die Textanalyse](#analysemethoden-für-die-textanalyse)
-  - [Didaktische Reduktion](#didaktische-reduktion)
-  - [Concept Mapping](#concept-mapping)
-  - [SQ3R-Methode (Survey, Question, Read, Recite, Review)](#sq3r-methode-survey-question-read-recite-review)
-  - [Physikalische Dimensionsanalyse](#physikalische-dimensionsanalyse)
-  - [Historisch-genetische Analyse](#historisch-genetische-analyse)
-  - [Analogie-Analyse](#analogie-analyse)
-  - [Fehlvorstellungsanalyse](#fehlvorstellungsanalyse)
-  - [Methodologische Analyse](#methodologische-analyse)
-  - [ARIVA-Methode](#ariva-methode)
-  - [Abstraktionsebenen-Analyse](#abstraktionsebenen-analyse)
-  - [Epistemologische Analyse](#epistemologische-analyse)
-  - [SOLO-Taxonomie (Structure of Observed Learning Outcomes)](#solo-taxonomie-structure-of-observed-learning-outcomes)
-  - [Kompetenzorientierte Analyse](#kompetenzorientierte-analyse)
+## Inhaltliche Analyse
 
-## Didaktische Reduktion
+- Fokus auf Bedeutung und Kernbotschaften des Textes
+- Untersuchung von Hauptthemen, Unterthemen und Argumentationsstruktur
+- Hilft, die zentralen Aussagen zu erfassen
 
-- Vereinfachung komplexer Sachverhalte auf verschiedene Verständnisebenen:
-  - Grundniveau (Alltagssprache)
-  - Mittelstufe (Semi-formale Beschreibung)
-  - Experten (Mathematisch-formale Beschreibung)
+## Strukturelle Analyse 
 
-## Concept Mapping
+- Untersucht Aufbau und Organisation des Textes
+- Analysiert Absätze, Kapitel, Übergänge etc.
+- Gibt Aufschluss über die Gliederung der Inhalte
 
-- Erstellen einer visuellen Darstellung von:
-  - Konzepten als Knoten
-  - Beziehungen als beschriftete Verbindungen
-  - Hierarchien und Querverbindungen
-- Fokus auf Zusammenhänge und Kausalitäten
+## Stilistische Analyse
 
-## SQ3R-Methode (Survey, Question, Read, Recite, Review)
+- Betrachtet sprachliche Mittel und Schreibstil
+- Untersucht Wortwahl, Satzbau, rhetorische Mittel
+- Ermöglicht Rückschlüsse auf Ausdruckskraft und Stil
 
-- Systematische Texterschließung:
-  1. Überblick verschaffen (Survey)
-  2. Fragen formulieren (Question)
-  3. Aktives Lesen (Read)
-  4. Wiedergabe (Recite)
-  5. Zusammenfassende Überprüfung (Review)
+## Semantische Analyse / Stimmungsanalyse
 
-## Physikalische Dimensionsanalyse
+- Identifiziert subjektive Informationen und Stimmungen
+- Klassifiziert Aussagen als positiv, neutral oder negativ
+- Häufig bei Kommentaren und Bewertungen eingesetzt
 
-- Analyse der physikalischen Größen:
-  - Basisgrößen identifizieren
-  - Abgeleitete Größen untersuchen
-  - Einheitenkonsistenz prüfen
-  - Dimensionale Homogenität überprüfen
+## Kontextanalyse
 
-## Historisch-genetische Analyse
+- Berücksichtigt kulturelle und soziale Faktoren 
+- Betrachtet Umstände der Textentstehung
+- Wichtig für historische und kulturelle Einordnung
 
-- Entwicklung der Konzepte im historischen Kontext:
-  - Ursprüngliche Probleme und Fragestellungen
-  - Historische Lösungsansätze
-  - Evolution der Begriffe und Methoden
-  - Moderne Interpretationen
+## Topic Modeling / Themenmodellierung
 
-## Analogie-Analyse
+- Gruppiert ähnliche Themen 
+- Fasst Themen in übergeordnete Konzepte zusammen
+- Erstellt eine Taxonomie relevanter Themen
 
-- Vergleich mit bekannten Konzepten:
-  - Alltagsanalogien
-  - Technische Analogien
-  - Mathematische Analogien
-  - Grenzen der Analogien
+## Schlüsselwortanalyse
 
-## Fehlvorstellungsanalyse
+- Identifiziert zentrale Begriffe des Textes
+- Erstellt Liste häufig verwendeter Schlüsselwörter
+- Hilft beim Erfassen der Kernaussagen
 
-- Identifikation typischer Missverständnisse:
-  - Alltagsvorstellungen vs. physikalische Konzepte
-  - Begriffliche Mehrdeutigkeiten
-  - Typische Verständnishürden
-  - Korrekturstrategien
-
-## Methodologische Analyse
-
-- Untersuchung der verwendeten Methoden:
-  - Experimentelle Zugänge
-  - Theoretische Modellierung
-  - Mathematische Werkzeuge
-  - Approximationen und Idealisierungen
-
-## ARIVA-Methode
-
-- Strukturierte Lerneinheitenplanung:
-  1. Ausrichten (Orientierung geben)
-  2. Reaktivieren (Vorwissen aktivieren)
-  3. Informieren (Neues präsentieren)
-  4. Verarbeiten (Aktiv anwenden)
-  5. Auswerten (Ergebnisse sichern)
-
-## Abstraktionsebenen-Analyse
-
-- Systematische Betrachtung verschiedener Abstraktionsstufen:
-  1. Konkrete Beispiele und Anwendungen
-  2. Qualitative Beschreibungen
-  3. Semi-quantitative Modelle
-  4. Mathematisch-formale Darstellung
-
-## Epistemologische Analyse
-
-- Untersuchung der Erkenntnisgewinnung:
-  - Beobachtungen und Experimente
-  - Theoriebildung
-  - Modellierung
-  - Validierung
-
-## SOLO-Taxonomie (Structure of Observed Learning Outcomes)
-
-- Analyse der Verständnistiefe:
-  1. Prästrukturell (unzusammenhängende Information)
-  2. Unistrukturell (einfache Verbindungen)
-  3. Multistrukturell (mehrere Aspekte)
-  4. Relational (Integration)
-  5. Erweitert abstrakt (Generalisierung)
-
-## Kompetenzorientierte Analyse
-
-- Fokus auf verschiedene Kompetenzbereiche:
-  - Fachwissen
-  - Erkenntnisgewinnung
-  - Kommunikation
-  - Bewertung
+Diese Methoden können je nach Analyseziel und Textart kombiniert oder einzeln angewendet werden. Eine sorgfältige Auswahl und Anwendung der passenden Methoden ermöglicht ein tieferes Verständnis des analysierten Textes.

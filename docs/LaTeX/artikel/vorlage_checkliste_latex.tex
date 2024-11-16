@@ -1,0 +1,99 @@
+\documentclass[a4paper,11pt]{article}
+
+% Grundlegende Formatierung und Sprache
+\usepackage[ngerman]{babel}
+\usepackage[ngerman]{datetime2}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage[a-1b]{pdfx}
+
+% Schriftart und Typografie
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{titlesec}
+
+% Listen und Layout
+\usepackage{enumitem}
+
+% Mathematik und Symbole
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+% Checkbox Definition
+\newcommand{\checkbox}{$\square$}
+
+% Schriftart
+\setmainfont{Helvetica Neue}[
+    UprightFont = * Light,
+    BoldFont = * Medium,
+    ItalicFont = * Light Italic,
+    BoldItalicFont = * Medium Italic,
+    Ligatures = TeX
+]
+
+\setsansfont{Helvetica Neue}[
+    Ligatures = TeX
+] 
+
+\setmonofont{Source Code Pro}[
+    Scale = 1.0,
+    WordSpace = {1,0,0},
+    HyphenChar = None,
+    PunctuationSpace = WordSpace
+]
+
+% Seitenränder
+\geometry{
+    a4paper,           % Setzt das Papierformat auf A4
+    left=20mm,         % Linker Rand: 20 Millimeter
+    right=20mm,        % Rechter Rand: 20 Millimeter
+    top=20mm,          % Oberer Rand: 20 Millimeter
+    bottom=20mm,       % Unterer Rand: 20 Millimeter
+    %includehead,       % Kopfzeile wird in die Seitenhöhe einbezogen
+    %includefoot,       % Fußzeile wird in die Seitenhöhe einbezogen
+    heightrounded      % Höhe wird auf ganze Zahlen gerundet
+}
+
+% Listen-Einstellungen
+\setlist[itemize]{
+    leftmargin=2em,      % Einrückung
+    parsep=0em,
+    topsep=0.18em,
+    itemsep=0.18em
+}
+
+% Kopf- und Fußzeilen
+\pagestyle{empty}
+% Absätze ohne Einrückung 
+\setlength\parindent{0em}
+
+% Überschriften-Abstände
+\titlespacing*{\section}{0em}{*1}{*0.5}
+
+% Hyperref-Optionen
+\PassOptionsToPackage{%
+    hidelinks,
+    pdfstartview=Fit,
+    pdfpagelayout=SinglePage,
+    pdfpagemode=UseNone,
+    pdftoolbar=false,
+    pdfmenubar=false,
+    pdffitwindow=true,
+    pdfnewwindow=true
+}{hyperref}
+
+\begin{document}
+
+% Nach der Überschrift
+{\small\textcolor{gray!90}{Letzte Aktualisierung: \today}}
+
+\section*{Checkliste}
+
+\section*{Test}
+\begin{itemize}
+    \item[\checkbox] Check
+    \item[\checkmark] Check 2 
+\end{itemize}
+
+\end{document}

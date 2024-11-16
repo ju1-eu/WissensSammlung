@@ -1,0 +1,248 @@
+% Dokumentenklasse und Seitenformat
+\documentclass[a4paper,BCOR=12mm]{scrartcl}  % BCOR für Bindungskorrektur hinzugefügt
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+% Schriftarten und Typografie
+\usepackage{fontspec}  % Ermöglicht die Verwendung von TrueType/OpenType-Schriftarten mit XeLaTeX
+\usepackage[T1]{fontenc} % Korrekte Darstellung von Umlauten und Sonderzeichen
+\usepackage{textcomp}   % Zusätzliche Schriftzeichen wie Euro-Symbol
+\usepackage{microtype}  % Optimiert die Mikrotypografie für bessere Lesbarkeit
+
+% Hauptschriftart einstellen (Tex Gyre Termes, aber anpassbar)
+\setmainfont[
+    Path = /Users/jan/Library/Fonts/,  % Pfad zu den Schriftarten
+    BoldFont = texgyretermes-bold.otf,
+    ItalicFont = texgyretermes-italic.otf,
+    BoldItalicFont = texgyretermes-bolditalic.otf
+]{texgyretermes-regular.otf}
+
+% Monospaced-Schriftart für Quellcode oder ähnliches
+\setmonofont{Source Code Pro}
+
+% Mathematische Schriftarten und Pakete
+\usepackage{unicode-math} % Verwendung moderner Mathematik-Schriften (kompatibel mit XeLaTeX)
+\setmathfont{STIX Two Math} % Mathematische Schriftart einstellen
+
+% Mathematische Erweiterungen
+\usepackage{amsmath}  % Erweiterungen für mathematische Formeln
+%\usepackage{amssymb}  % Weitere mathematische Symbole
+\usepackage{siunitx}  % Für das Setzen von SI-Einheiten und Zahlenformaten
+\sisetup{per-mode=symbol}  % Optional: Ändert die Schreibweise von Einheiten
+\sisetup{locale = DE}
+% Definiere zusätzliche Einheiten
+\DeclareSIUnit{\litre}{l}
+\DeclareSIUnit{\PS}{PS}
+
+
+% Sprache und Lokalisierung (Deutsch)
+\usepackage[ngerman]{babel}   % Deutsche Sprachunterstützung
+\usepackage{csquotes}         % Kontext-sensitive Anführungszeichen (wichtig für Deutsch und Zitate)
+
+% Zusätzliche Pakete für Symbole, Vektoren und Grafiken
+\usepackage{pifont}     % Für Sonderzeichen wie Häkchen oder Kreuze
+\usepackage{esvect}     % Für Vektor-Symbole
+\usepackage{graphicx}   % Grafiken einfügen
+\usepackage{caption}    % Anpassung von Bildunterschriften
+\usepackage{subcaption} % Mehrere Unterbilder
+\usepackage{tikz}
+\usetikzlibrary{mindmap, shapes, backgrounds}
+
+% Tabellen und Listen
+\usepackage{booktabs}   % Hochwertige Tabellen
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{tabularx}   % Flexible Tabellen
+\usepackage{enumitem}   % Anpassen von Aufzählungen und Listen
+\setlist[enumerate,1]{label=\alph*)}
+\setlist{itemsep=0pt}   % Kein Abstand zwischen Listenelementen
+
+% Algorithmen
+\usepackage[ruled,vlined]{algorithm2e} % Für die Darstellung von Algorithmen
+\SetAlCapNameFnt{\usekomafont{caption}} % Anpassung der Algorithmentitel
+\SetAlCapFnt{\usekomafont{captionlabel}} % Anpassung der Algorithmus-Kopfzeile
+
+% Abstract-Anpassung
+\usepackage{abstract} % Anpassung der Zusammenfassung
+
+% Literaturverzeichnis
+\usepackage[backend=biber, style=ieee, defernumbers=true]{biblatex}  % Verwendung von Biber als Backend und IEEE-Stil (kompatibel mit XeLaTeX)
+\addbibresource{references.bib}  % Einbinden der Bibliographie-Datei
+\ExecuteBibliographyOptions{backref=true,backrefstyle=three+,url=true,urldate=comp,abbreviate=false,maxbibnames=20}
+\DeclareBibliographyCategory{cited}
+\let\defaultcite\cite
+\renewcommand*\cite[2][]{\addtocategory{cited}{#2}\defaultcite[#1]{#2}}
+
+% Farben und Listings für Quellcode
+\usepackage[dvipsnames,svgnames,x11names]{xcolor} % Erweiterte Farbunterstützung
+\input{colors_settings.tex}
+\usepackage{listings}
+\input{listing_settings.tex}
+
+% Hyperlinks und Querverweise
+\usepackage[hidelinks]{hyperref}  % Versteckte Links (ohne Umrandung)
+\usepackage[ngerman]{cleveref}    % Intelligente Querverweise
+
+% Fußnoten
+\usepackage{footnote}   % Verbesserte Fußnotenverwaltung
+\usepackage{fnpct}      % Verwaltung der Fußnoten und Interaktion mit Satzzeichen
+\setfnpct{after-punct-space={-.2em}}
+
+% Kopf- und Fußzeilen
+\usepackage[automark]{scrlayer-scrpage} 
+\pagestyle{scrheadings}
+
+% Einstellungen für Kopf- und Fußzeilen
+\clearpairofpagestyles % Alle Voreinstellungen löschen
+\ihead[]{\headmark} % Kapitel oder Abschnittstitel in die Kopfzeile
+\ofoot*[\pagemark]{\pagemark} % Seitenzahl außen in die Fußzeile
+
+\automark[section]{section} 
+\automark*[subsection]{}
+
+% Benutzerdefinierte Befehle
+\newcommand{\R}{\mathbb{R}}     % Für die Menge der reellen Zahlen
+\newcommand{\square}{\ding{111}} % Für Checkboxen
+\renewcommand{\lstlistingname}{Quelltext}
+
+% Dokumenteninformationen
+\title{Thema \\
+       Notizen}
+\author{}
+\date{Stand: \today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Zsf.
+\end{abstract}
+    
+\tableofcontents
+
+% Beginn des eigentlichen LaTeX-Dokuments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{To-Do-Liste}
+\begin{itemize}[label=\ding{113}] % leeres Quadrat
+    \item Aufgabe 1
+    \item Aufgabe 2
+    \item Aufgabe 3
+\end{itemize}
+
+\section*{C++ Hallo Welt}
+
+\begin{lstlisting}[caption={Hallo Welt in C++}]
+#include <iostream>
+
+int main() {
+    std::cout << "Hallo Welt!" << std::endl;
+    return 0;
+}
+\end{lstlisting}
+
+
+\section*{Algorithmus}
+
+% Beispiel für einen strukturierten Algorithmus
+\begin{algorithm}[H]
+\caption{Maximalwert in einem Array finden}
+\KwIn{Ein Array $A[1 \dots n]$ mit $n$ Elementen}
+\KwOut{Der Maximalwert in $A$}
+\KwData{Ein Array von Zahlen}
+\KwResult{Größtes Element im Array}
+
+\textbf{Initialisierung:} Setze $max = A[1]$\;
+\For{$i = 2$ \textbf{bis} $n$}{
+    \If{$A[i] > max$}{
+        Setze $max = A[i]$\;
+    }
+}
+\textbf{Ausgabe:} Gib $max$ zurück\;
+
+\end{algorithm}
+
+\section{\LaTeX{} Cheatsheet für normgerechte Einheitenschreibweise}
+
+\begin{enumerate}
+    \item Laden Sie das \texttt{siunitx}-Paket:
+    \begin{verbatim}
+    \usepackage{siunitx}
+    \sisetup{per-mode=symbol}
+    \sisetup{locale = DE}
+    % Definiere zusätzliche Einheiten
+    \DeclareSIUnit{\litre}{l}
+    \DeclareSIUnit{\PS}{PS}
+    \end{verbatim}
+
+    \item Grundlegende Verwendung:
+    \begin{verbatim}
+    \SI{3}{\kilo\metre}  % Für 3 km
+    \SI{5}{\kilo\watt\hour}  % Für 5 kWh
+    \end{verbatim}
+    Beispiel: \SI{3}{\kilo\metre}, \SI{5}{\kilo\watt\hour}
+
+    \item Komplexe Einheiten:
+    \begin{verbatim}
+    \SI{287}{\joule\per (\kilogram \cdot \kelvin)}
+    \end{verbatim}
+    Beispiel: \SI{287}{\joule\per (\kilogram \cdot \kelvin)}
+
+    \item Einheiten ohne Wert:
+    \begin{verbatim}
+    \si{\metre\per\second}  % Für m/s
+    \end{verbatim}
+    Beispiel: \si{\metre\per\second}
+
+    \item Benutzerdefinierte Einheiten:
+    \begin{verbatim}
+    \DeclareSIUnit{\PS}{PS}  % Definiert PS als Einheit
+    \SI{150}{\PS}  % Verwendet PS in einer Messung
+    \end{verbatim}
+    Beispiel: \SI{150}{\PS}
+
+    \item Achsenbeschriftungen:
+    \begin{verbatim}
+    \sisetup{per-mode=symbol}
+    $s/\si{\kilo\metre}$  % Für s/km
+    \end{verbatim}
+    Beispiel: $s/\si{\kilo\metre}$
+
+    \item Brüche in Einheiten:
+    \begin{verbatim}
+    \SI{5}{\litre\per (100\, \kilo\metre)}  % Für 5 l/(100 km)
+    \end{verbatim}
+    Beispiel: \SI{5}{\litre\per (100\, \kilo\metre)}
+
+    \item Kursive Formelzeichen mit normalen Einheiten:
+    \begin{verbatim}
+    $\mathit{v} = \SI{100}{\kilo\metre\per\hour}$
+    \end{verbatim}
+    Beispiel: $\mathit{v} = \SI{100}{\kilo\metre\per\hour}$
+
+    \item Komplexes Beispiel:
+    \begin{verbatim}
+    \mathit{V_S} = \SI{5}{\litre\per (100\, \kilo\metre)}
+    \end{verbatim}
+    Beispiel: $\mathit{V_S} = \SI{5}{\litre\per (100\, \kilo\metre)}$
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+
+% Beispiel für eine Fußnote mit URL
+Google\footnote{\url{https://www.google.com}}.
+
+% Beschreibung von Claude AI
+Claude\footnote{\url{https://claude.ai/new}} ist ein KI-Assistent, der von Anthropic (San Francisco, Kalifornien, USA) entwickelt wurde. Er ist darauf ausgelegt, bei einer Vielzahl von Aufgaben zu unterstützen, darunter Analyse, Problemlösung, Programmierung und kreatives Schreiben.
+
+% Beispiel für eine Zitation
+OpenAI \cite{statista2024openai} ist ein führendes KI-Unternehmen, das für Anwendungen wie ChatGPT\footnote{\url{https://chatgpt.com/?model=gpt-4}} und Dall-E bekannt ist.
+
+% Ausgabe des Literaturverzeichnisses
+\cleardoublepage % Startet auf einer neuen rechten Seite
+\phantomsection % Ermöglicht es, dass das Inhaltsverzeichnis den richtigen Link enthält
+\addcontentsline{toc}{section}{Literatur} % Fügt "Literatur" dem Inhaltsverzeichnis als Abschnitt hinzu
+\printbibliography % Zeigt alle zitierten Einträge an
+
+
+\end{document}
