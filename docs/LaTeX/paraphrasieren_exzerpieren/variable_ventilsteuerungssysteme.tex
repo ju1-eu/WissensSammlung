@@ -1,0 +1,217 @@
+\documentclass[a4paper,12pt]{article}
+
+% Grundlegende Formatierung und Sprache
+\usepackage[ngerman]{babel}
+\usepackage[ngerman]{datetime2}
+\usepackage{geometry}
+\usepackage{microtype}
+
+% Schriftart und Typografie
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{tocloft}
+
+% Listen und Layout
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{booktabs}
+
+% Mathematik und Symbole
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+% Fußnoten
+\usepackage[bottom]{footmisc}
+\usepackage{scrextend}
+
+% Farbschema
+\definecolor{darknavy}{RGB}{0,35,102}      % Dunkles Marineblau
+\definecolor{burgundy}{RGB}{128,0,32}       % Burgundrot
+\definecolor{darkgreen}{RGB}{0,70,50}       % Dunkelgrün
+\definecolor{deepblue}{RGB}{0,51,102}       % Tiefblau
+
+% Deutsche Anführungszeichen
+\usepackage[german=quotes]{csquotes}
+
+% Bibliographie-Einstellungen für Biber
+\usepackage[
+    style=authoryear,
+    backend=biber,
+    sorting=nyt,
+    maxcitenames=2,
+    doi=false,
+    isbn=false,
+    url=true,
+    eprint=false
+]{biblatex}
+
+% Literaturverzeichnis-Einstellungen
+\DeclareNameAlias{sortname}{family-given}
+\DefineBibliographyStrings{ngerman}{
+    andothers = {{et\,al\adddot}},
+    editor = {Hrsg\adddot},
+    editors = {Hrsg\adddot},
+    page = {S\adddot},
+    pages = {S\adddot},
+    volume = {Bd\adddot},
+    edition = {Aufl\adddot}
+}
+
+% Literaturverzeichnis laden
+\addbibresource{bibliografie.bib}
+
+% Seitenränder gemäß Richtlinien
+\geometry{
+    a4paper,
+    left=30mm,         % Linker Rand: 3,0 cm (Bindungsrand)
+    right=25mm,        % Rechter Rand: 2,5 cm
+    top=25mm,          % Oberer Rand: 2,5 cm
+    bottom=25mm,       % Unterer Rand: 2,5 cm
+    heightrounded      % Höhe wird auf ganze Zahlen gerundet
+}
+
+% Standard-Systemschriften
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+
+% Überschriften-Formatierung
+\titleformat{\section}
+  {\sffamily\bfseries\fontsize{16}{19.2}\selectfont}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\sffamily\bfseries\fontsize{14}{16.8}\selectfont}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\sffamily\bfseries\fontsize{12}{14.4}\selectfont}{\thesubsubsection}{1em}{}
+
+% Abstände für Überschriften
+\titlespacing*{\section}{0pt}{2\baselineskip}{1\baselineskip}
+\titlespacing*{\subsection}{0pt}{\baselineskip}{\baselineskip}
+\titlespacing*{\subsubsection}{0pt}{\baselineskip}{\baselineskip}
+
+% Zeilenabstand 1,5-fach für Haupttext
+\onehalfspacing
+
+% Listen-Einstellungen mit enumitem
+\setlist{
+    leftmargin=2em,
+    itemsep=0.18em,
+    parsep=0em,
+    topsep=0.18em,
+    font=\normalfont,
+    itemindent=0pt,
+    listparindent=0pt
+}
+
+% Fußnoten-Formatierung
+\deffootnote{1.5em}{1em}{\makebox[1.5em][l]{\thefootnotemark.}}
+\renewcommand{\footnoterule}{\rule{0.3\textwidth}{0.4pt}\vspace*{0.1cm}}
+\setlength{\footnotemargin}{1.2em}
+\setlength{\skip\footins}{0.5cm}
+\setlength{\footnotesep}{0.4cm}
+
+% Schriftgrößen-Definitionen
+\makeatletter
+\renewcommand\footnotesize{%
+   \@setfontsize\footnotesize{10}{12}%
+   \abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus1\p@
+   \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+   \belowdisplayskip \abovedisplayskip
+   \let\@listi\@footnotesize
+}
+
+% Checkbox Definition für Checklisten
+\newcommand{\checkbox}{$\square$}
+\newcommand{\checkedbox}{$\checkmark$}
+
+% Kein Einzug bei Absätzen
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+% Zitationsbefehle anpassen
+\renewcommand{\mkbibnamefamily}[1]{\textsc{#1}}
+\DeclareFieldFormat{title}{#1}
+\DeclareFieldFormat[book]{title}{\emph{#1}}
+
+% Vergleiche-Prefix für Literaturverweise
+\DeclareFieldFormat{citehyperref}{#1}
+\newbibmacro*{cite:vgl}{%
+  \printtext[bibhyperref]{vgl\adddot[\introskip]\space}}
+
+% Hyperref sollte einer der letzten Pakete sein
+\usepackage{bookmark}
+\usepackage{hyperref}
+
+% PDF-Metadaten und Linkfarben
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darknavy,           % Inhaltsverzeichnis und interne Links
+    filecolor=burgundy,           % Dateilinks
+    urlcolor=darkgreen,           % URLs
+    citecolor=deepblue,           % Zitationslinks
+    pdftitle={Exzerpt \& Paraphrase: [Titel des analysierten Werks]},
+    pdfauthor={[Ihr Name]},
+    pdfsubject={[Thematischer Fokus]},
+    pdfkeywords={[Schlüsselwort 1], [Schlüsselwort 2], [Schlüsselwort 3]},
+    pdfcreator={XeLaTeX with hyperref},
+    pdfproducer={XeLaTeX},
+    pdflang={de}
+}
+
+% Farben für das Inhaltsverzeichnis anpassen 
+\renewcommand{\cftsecfont}{\color{darknavy}}
+\renewcommand{\cftsubsecfont}{\color{darknavy}}
+\renewcommand{\cftsecpagefont}{\color{darknavy}}
+\renewcommand{\cftsubsecpagefont}{\color{darknavy}}
+\renewcommand{\cfttoctitlefont}{\huge\bfseries\color{darknavy}}
+
+
+\begin{document}
+% Titelseite ohne Nummerierung
+\thispagestyle{empty}
+
+% Titel
+\begin{center}
+    {\huge\sffamily\bfseries Exzerpt \& Paraphrase\par}
+    
+    \vspace{2.5cm}
+    
+    % Dokumentkopf in zentrierter Tabelle
+    \begin{tabular}{ll}
+        \textbf{Titel:} & \textit{Basiswissen Verbrennungsmotor:} \\
+        & \textit{Fragen -- rechnen -- verstehen -- bestehen} \\[0.5cm]
+        \textbf{Originalautor:} & Klaus Schreiner \\[0.5cm]
+        \textbf{Veröffentlichung:} & 2020 \\[0.5cm]
+        \textbf{Autor der Analyse:} & Jan Unger \\[0.5cm]
+        \textbf{Datum:} & 17. November 2024 \\[0.5cm]
+        \textbf{Seiten:} & 79-156 \\[0.5cm]
+        \textbf{Thematischer Fokus:} & Motorthermodynamik \\[0.5cm]
+        \multicolumn{2}{l}{\textbf{Bearbeitungsstatus:}} \\[0.2cm]
+        \multicolumn{2}{l}{\checkedbox~Exzerpt \& Paraphrase: Fragen 4.1 -- 4.11} \\
+        \multicolumn{2}{l}{\checkedbox~Markdown in LaTeX 4.1} \\
+        \multicolumn{2}{l}{\checkbox~nächster Schritt: Markdown in LaTeX 4.2}
+    \end{tabular}
+\end{center}
+
+% Zurück zu normalen Seitenrändern für die folgenden Seiten
+\newpage
+% Römische Seitennummerierung für Verzeichnisse
+\pagenumbering{roman}
+% Inhaltsverzeichnis
+\tableofcontents
+\newpage
+% Arabische Seitennummerierung für Hauptteil
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography[
+    title=Literaturverzeichnis,
+    heading=bibintoc
+]
+\end{document}
