@@ -4,81 +4,50 @@ author: "Jan Unger"
 date: "2024-11-17"
 ---
 
-# Allgemeine Paraphrasierungs-Vorlage
+# Technische Paraphrasierungs-Vorlage
 
-**1. Originaltext-Analyse**
-- Autor & Quelle: [Quellenangabe]
-- Hauptthema: [Kernthema]
-- Schlüsselbegriffe: [Wichtige Begriffe]
+**1. Originaltext & Kontext**
+- Quelle: [Angabe]
+- Fachbereich: [Mathe/Physik/Informatik/KFZ]
+- Zielgruppe: [Niveau]
 
-**2. Vorbereitung der Paraphrase**
+**2. Fachbegriff-Analyse** 
+- Unveränderbare Fachbegriffe: [Liste]
+- Definierte Größen/Einheiten: [SI/Norm]
+- Fachspezifische Abkürzungen: [Liste]
 
-*Original:*
-"[Originaltext einfügen]"
-(Quelle: [Quellenangabe], S. X)
+**3. Inhaltliche Umformung**
 
-**3. Umformungsschritte**
+a) *Kernaussage identifizieren*
+- Hauptfunktion: [...]
+- Wirkmechanismus: [...]
+- Parameter: [...]
 
-a) **Schlüsselwörter identifizieren**
-- Begriff 1 → Alternative: [Synonym/Umschreibung]
-- Begriff 2 → Alternative: [Synonym/Umschreibung]
-- Begriff 3 → Alternative: [Synonym/Umschreibung]
+b) *Alternative Formulierung*
+- Eigene Wortwahl bei Beschreibungen
+- Beibehaltung technischer Präzision
+- Logische Neustrukturierung
 
-b) **Satzstruktur ändern**
-- Original: [Ursprüngliche Struktur]
-- Variante 1: [Aktiv → Passiv]
-- Variante 2: [Umstellung der Satzteile]
-- Variante 3: [Zusammenfassung/Aufteilung]
-
-**4. Paraphrase-Versionen**
+**4. Paraphrase-Entwicklung**
 
 *Erste Version:*
-[Erste Umformulierung]
-
-*Überarbeitete Version:*
-[Verbesserte Umformulierung]
+- Grobe Umformulierung
+- Prüfung auf Fachbegriffe
+- Logikcheck
 
 *Finale Version:*
-[Endgültige Paraphrase]
-(Vgl. [Quellenangabe], S. X)
+- Präzisierte Fassung
+- Technisch korrekt
+- Eigenständig formuliert
 
 **5. Qualitätskontrolle**
-
-- [ ] Sinnerhalt geprüft
+- [ ] Fachlich korrekt
 - [ ] Eigenständige Formulierung
-- [ ] Korrekte Quellenangabe
-- [ ] Angemessene Länge
-- [ ] Fachliche Genauigkeit
+- [ ] Begriffe normgerecht
+- [ ] Logisch strukturiert
+- [ ] Zielgruppengerecht
 
-**6. Beispiel einer vollständigen Paraphrase**
-
-*Originaltext:*
-"Die globale Erwärmung ist ein dringendes Problem, das sofortiges Handeln erfordert."
-
-*Paraphrase-Entwicklung:*
-
-1. **Schlüsselwörter:**
-   - globale Erwärmung → Klimawandel
-   - dringend → akut
-   - sofortiges Handeln → unverzügliche Maßnahmen
-
-2. **Strukturvarianten:**
-   - Aktiv → Passiv
-   - Hauptsatz-Nebensatz → Zwei Hauptsätze
-   - Nominalisierung → Verbalisierung
-
-3. **Finale Paraphrase:**
-"Der Klimawandel stellt eine akute Herausforderung dar, die unverzügliche Maßnahmen notwendig macht."
-(Vgl. [Quellenangabe], S. X)
-
-**7. Anmerkungen**
-- [Besonderheiten beachten]
-- [Fachspezifische Aspekte]
-- [Stilistische Überlegungen]
-
-**8. Häufige Fehler vermeiden**
-- [ ] Zu nah am Original
-- [ ] Sinnentstellung
-- [ ] Fehlende Quellenangabe
-- [ ] Unpassender Stil
-- [ ] Falsche Fachbegriffe
+**6. Dokumentation**
+- Version/Datum
+- Fachliche Prüfung
+- Verwendungszweck

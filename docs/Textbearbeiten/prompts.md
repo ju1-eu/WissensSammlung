@@ -103,3 +103,24 @@ Schlüsselwörter markieren, Argumentationsanalyse, Textfunktion bestimmen
 
 1. Erstelle eine strukturierte Liste der wichtigsten Fragen
 2. Erstelle die Lösungen
+
+## Prompts für das Levelsystem
+
+1. Erkläre mir 
+2. Das war eine "Level 1"-Antwort. Bitte erstelle eine "Level 2"-Antwort, die noch genauer beleuchtet, was [THEMA] eigentlich ist.
+3. Sehr gut! Aber jetzt hätte ich gerne noch die "Level 3"-Antwort, die nochmal genauer ist.
+
+## Prompts für das Stufensystem
+
+1. Erkläre mir
+2. Das ist eine BASIS-Antwort. Bitte erstelle eine PROFI-Antwort, die noch genauer beleuchtet, was [THEMA] eigentlich ist.
+3. Sehr gut! Aber jetzt hätte ich gerne noch die EXPERTEN-Antwort, die nochmal genauer ist.
+
+## Verschaffe dir einen Überblick 
+
+- über das Inhaltsverzeichnis von Kapitel 4
+- was gehört thematisch zusammen 
+- und kann zusammen behandelt werden
+
+gehe schrittweise vor und beginne mit dem Exzerpieren, gefolgt vom Paraphrasieren. 
+beachte die bereitgestellten Vorlagen für beide Schritte. 
