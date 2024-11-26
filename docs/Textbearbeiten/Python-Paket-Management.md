@@ -1,111 +1,175 @@
 ---
 title: "Python-Paket-Management"
 author: "Jan Unger"
-date: "2024-11-16"
+date: "2024-11-26"
 ---
 
 # Python Paket-Management unter macOS
-## Schritt-für-Schritt Anleitung
 
-### 1. Virtuelle Umgebung einrichten
+## Virtuelle Umgebung einrichten
+
 ```bash
 # Terminal öffnen und zum Projektverzeichnis navigieren
-cd /pfad/zum/projekt
-
+# Virtuelle Umgebung deaktivieren
+deactivate
+# Optional: Virtuelle Umgebung löschen
+rm -rf venv
 # Virtuelle Umgebung erstellen
 python3 -m venv venv
-
 # Virtuelle Umgebung aktivieren
 source venv/bin/activate
-
-# Überprüfen ob aktiviert - (venv) sollte am Anfang der Zeile erscheinen
-# (venv) jan@imacj $
 ```
 
-### 2. Pakete installieren
+## Pakete installieren
+
+| **Paket**                  | **Funktionalität**                                                    |
+| -------------------------- | --------------------------------------------------------------------- |
+| `PyPDF2`                   | Verarbeitung von PDF-Dateien (z. B. Extraktion von Inhalten).         |
+| `pytube`                   | Herunterladen von Videos von YouTube.                                 |
+| `whisper`                  | Sprach-zu-Text-Transkription (z. B. OpenAI Whisper).                  |
+| `youtube-transcript-api`   | Abrufen von Transkripten von YouTube-Videos.                          |
+| `black`, `isort`, `flake8` | Tools für Code-Formatierung, Import-Sortierung und Linting.           |
+| `mypy`                     | Statische Typprüfung für Python-Code.                                 |
+| `Pillow`                   | Bildbearbeitung (z. B. Extraktion und Verarbeitung von Bildern).      |
+| `PyMuPDF`                  | Verarbeitung von PDFs (Extraktion von Bildern, Texten etc.).          |
+| `rich`                     | Formatierte Konsolenausgabe (z. B. Fortschrittsbalken, farbige Logs). |
+
+
 ```bash
 # pip aktualisieren
 pip install --upgrade pip
 
 # Benötigte Pakete installieren
-pip install PyPDF2
-pip install pytube
-pip install whisper
-pip install youtube-transcript-api
+pip install PyPDF2 pytube whisper youtube-transcript-api PyMuPDF Pillow rich
+
+# Tools installieren
+pip install black isort flake8 mypy
 ```
 
-### 3. Aktuelle Pakete in requirements.txt speichern
+## Pakete in requirements.txt speichern
+
 ```bash
 # Alle installierten Pakete in requirements.txt speichern
 pip freeze > requirements.txt
-
 # Inhalt anzeigen
 cat requirements.txt
-```
-
-### 4. Pakete aus requirements.txt installieren
-```bash
 # Alle Pakete aus der requirements.txt installieren
 pip install -r requirements.txt
 ```
 
-### 5. Pakete aktualisieren
+## Pakete aktualisieren
+
 ```bash
+# Aktuelle Paketliste anzeigen
+pip list
 # Veraltete Pakete anzeigen
 pip list --outdated
-
-# Einzelnes Paket aktualisieren
-pip install --upgrade PyPDF2
-
 # Alle Pakete aktualisieren
 pip list --outdated | cut -d ' ' -f1 | tail -n +3 | xargs -n1 pip install -U
-
 # Nach der Aktualisierung requirements.txt erneuern
 pip freeze > requirements.txt
 ```
 
-### 6. Paketliste verwalten
+## Troubleshooting
+
 ```bash
-# Aktuelle Paketliste anzeigen
-pip list
+# Cache leeren bei Problemen
+pip cache purge
 
-# Detaillierte Paketinformationen
-pip show PyPDF2
+# Paket neu installieren
+pip uninstall PyPDF2
+pip install PyPDF2
 
-# Requirements in eine neue Datei speichern
-pip freeze > requirements_neu.txt
+# Konfliktprüfung
+pip check
 
-# Unterschiede zwischen alter und neuer requirements.txt anzeigen
-diff requirements.txt requirements_neu.txt
+# Requirements als Graph visualisieren
+pip install pipdeptree
+pipdeptree
 ```
 
-### 7. Virtuelle Umgebung verlassen/löschen
-```bash
-# Virtuelle Umgebung deaktivieren
-deactivate
+## Code-Qualität prüfen
 
-# Optional: Virtuelle Umgebung löschen
-rm -rf venv
+```bash
+pip install black isort flake8 mypy
+# black: Gibt aus, welche Dateien neu formatiert wurden.
+black create_gallery.py extract_pdf_images.py pdf_extractor.py
+# isort: Ändert die Importreihenfolge oder zeigt fehlerhafte Sortierungen an.
+isort create_gallery.py extract_pdf_images.py pdf_extractor.py
+# flake8: Gibt Warnungen oder Fehler basierend auf PEP8-Konventionen aus
+flake8 create_gallery.py extract_pdf_images.py pdf_extractor.py
+# mypy: Gibt Typfehler aus, falls die Typannotationen nicht korrekt sind.
+mypy create_gallery.py extract_pdf_images.py pdf_extractor.py
+
+# PDF Kapitel Extraktor *.pdf, Seiten von bis?
+python pdf_extractor.py
+# Extrahiere Bilder aus *.pdf
+python extract_pdf_images.py
+# Gallerie: gallery/*_gallery.html
+python create_gallery.py
+
+# aktuelle Verzeichnis ($(pwd)) wird zum Python-Suchpfad hinzugefügt. Python Module und Pakete, die sich in diesem Verzeichnis befinden, erkennt und importieren kann.
+export PYTHONPATH="${PYTHONPATH}:$(pwd)"
+# Im Entwicklungsmodus wird das Paket nicht kopiert und installiert, sondern als Referenz zur aktuellen Verzeichnisstruktur verlinkt.
+# Änderungen am Quellcode sind sofort in der Umgebung verfügbar, ohne dass man das Paket erneut installieren muss.
+pip install -e .
 ```
 
-### 8. Projektspezifische requirements.txt
-Für Ihr aktuelles Projekt mit den angegebenen Paketen:
+**Konfiguration:**
+
+```bash
+# .flake8
+[flake8]
+max-line-length = 100
+exclude = venv, .git
+
+# pyproject.toml (für black und isort)
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+line_length = 100
+```
+
+## Projektspezifische requirements.txt
 
 ```text
 # requirements.txt
+black==24.10.0
 certifi==2024.8.30
 charset-normalizer==3.4.0
+click==8.1.7
+defusedxml==0.7.1
+flake8==7.1.1
 idna==3.10
+isort==5.13.2
+markdown-it-py==3.0.0
+mccabe==0.7.0
+mdurl==0.1.2
+mypy==1.13.0
+mypy-extensions==1.0.0
+packaging==24.2
+pathspec==0.12.1
+pillow==11.0.0
+pipdeptree==2.23.4
+platformdirs==4.3.6
+pycodestyle==2.12.1
+pyflakes==3.2.0
+Pygments==2.18.0
+PyMuPDF==1.24.14
 PyPDF2==3.0.1
 pytube==15.0.0
 requests==2.32.3
+rich==13.9.4
 six==1.16.0
+typing_extensions==4.12.2
 urllib3==2.2.3
 whisper==1.1.10
-youtube-transcript-api==0.6.2
+youtube-transcript-api==0.6.3
 ```
 
-### 9. Tipps und Best Practices
+## Tipps und Best Practices
 
 1. **Virtuelle Umgebung**:
    - Immer in einer virtuellen Umgebung arbeiten
@@ -122,34 +186,7 @@ youtube-transcript-api==0.6.2
    - Pakete nur aus vertrauenswürdigen Quellen installieren
    - Bei Produktivnutzung fixe Versionen verwenden
 
-4. **Troubleshooting**:
-   ```bash
-   # Cache leeren bei Problemen
-   pip cache purge
-   
-   # Paket neu installieren
-   pip uninstall PyPDF2
-   pip install PyPDF2
-   
-   # Konfliktprüfung
-   pip check
-   ```
-
-5. **Weitere nützliche Befehle**:
-   ```bash
-   # Paketabhängigkeiten anzeigen
-   pip show -f PyPDF2
-   
-   # Nur direkte Abhängigkeiten speichern
-   pip freeze --all > requirements_all.txt
-   
-   # Requirements als Graph visualisieren
-   pip install pipdeptree
-   pipdeptree
-   ```
-
-### 10. Automatisierungsskript
-Hier ein einfaches Shell-Script zum Aktualisieren der Pakete:
+## Automatisierungsskript
 
 ```bash
 #!/bin/bash
